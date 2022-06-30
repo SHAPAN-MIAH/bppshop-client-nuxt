@@ -1,13 +1,13 @@
 <template>
 <div class="div">
-  <Tutorial/>
-
-  zahid
+  <Home/>
 </div>
 </template>
 
 <script>
+import Home from '~/components/Home/Home.vue';
 export default {
-  name: 'IndexPage'
+    name: "IndexPage",
+    components: { Home }
 }
 </script>
