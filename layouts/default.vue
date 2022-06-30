@@ -1,7 +1,19 @@
 <template>
-    <div>
-        <nuxt-link to="/">home</nuxt-link>
-        <nuxt-link to="/about">about</nuxt-link>
+  <div>
+    <nuxt-link to="/">home</nuxt-link>
+    <nuxt-link to="/about">about</nuxt-link>
+    
 
-    </div>
+
+    <FooterComp/>
+  </div>
 </template>
+<script>
+import FooterComp from '@/components/SharedComponent/footer.vue'
+export default {
+    components:{
+        FooterComp
+    }
+    
+}
+</script>
