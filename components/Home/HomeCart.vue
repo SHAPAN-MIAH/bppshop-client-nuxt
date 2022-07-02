@@ -2,7 +2,7 @@
 <div class="container">
     <div class="cart-container">
         <li class="cart" v-for="item in category" :key="item.id">
-            <p :v-if="category.status">{{item.status}}</p>
+            <p>{{item.status}}</p>
             <img :src='item.img' alt="">
             <h3>{{item.name}}</h3>
         </li>
@@ -121,5 +121,6 @@ export default {
     font-family: "Rajdhani", sans-serif;
     text-align: center;
     color: gray;
+    font-weight: 700;
 }
 </style>
