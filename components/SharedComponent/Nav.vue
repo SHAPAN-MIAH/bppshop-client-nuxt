@@ -44,7 +44,7 @@
                 <img src="img/bppshops-logo.png" alt="">
             </div>
             <div class="searchInput">
-                <input type="text" name="" id="search">
+                <input type="text" name="" id="search" placeholder="Search by Product Category" >
                 <span class="searchIcon"><i class="bi bi-search"></i></span>
             </div>
             <div class="login">
