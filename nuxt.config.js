@@ -14,18 +14,18 @@ export default {
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       { href: "https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap", rel: "stylesheet" },
-      {
-        rel: 'stylesheet',
-        href: '/css/bootstrap.min.css'
+      // {
+      //   rel: 'stylesheet',
+      //   href: '/css/bootstrap.min.css'
 
-      },
+      // },
     ],
-    script: [
-      {
-        type: 'text/javascript',
-        src: '/js/bootstrap.bundle.min.js'
-      }
-    ]
+    // script: [
+    //   {
+    //     type: 'text/javascript',
+    //     src: '/js/bootstrap.bundle.min.js'
+    //   }
+    // ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
