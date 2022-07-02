@@ -1,10 +1,16 @@
 <template>
   <div class="footer-container">
-    <div class="items">
-      <p class="text1">© All Right Reserved BPPSHOPS</p>
-      <div class="text2"><img src="img/ftLogo.png" /></div>
-      <div class="text3"><img src="img/excelitlogo.png" /></div>
-
+    <div class="row">
+      <div class="col-md-3">
+        <p class="footer-section1">© All Right Reserved BPPSHOPS</p>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-section2"><img src="img/ftLogo.png" /></div>
+      </div>
+      <div class="col-md-3">
+        <div class="footer-section3"><img src="img/excelitlogo.png" /></div>
+      </div>
+      <div class="col-md-3"></div>
     </div>
   </div>
 </template>
@@ -16,21 +22,16 @@ export default {
 </script>
 
 <style scoped>
-
-
-
-.items{
-   
+.footer-container {
+  background-color: #2a2a2a;
+}
+/* .footer-items {
   display: flex;
   flex-direction: row;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   height: 200px;
-  
-}
-.text1{
+} */
+.text1 {
   margin-top: 100px;
-
-
 }
-
 </style>
