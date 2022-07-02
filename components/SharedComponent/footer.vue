@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="footer-container">
     <div class="items">
       <p class="text1">© All Right Reserved BPPSHOPS</p>
       <div class="text2"><img src="img/ftLogo.png" /></div>
@@ -16,6 +16,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 
 .items{
    
