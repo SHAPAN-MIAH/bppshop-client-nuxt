@@ -10,31 +10,31 @@
         <div id="sidebarMenu">
             <ul class="menu">
                 <li><a href="">
-                        <nuxt-link to="/">Home</nuxt-link>
+                        <nuxt-link to="/"><i class="bi bi-house-door-fill"></i> Home</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Islamic Products</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/islamicicon.png" alt=""> Islamic Products</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Grocery</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/groceryicon.png" alt=""> Grocery</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Fashion</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/fasionicon.png" alt=""> Fashion</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Electronics</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/electronicicon.png" alt=""> Electronics</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Baby Care</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/babycareicon.png" alt=""> Baby Care</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Cosmetics</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/cosmaticicon.png" alt=""> Cosmetics</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Furniture</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/furntureicon.png" alt=""> Furniture</nuxt-link>
                     </a></li>
                 <li><a href="">
-                        <nuxt-link to="/">Shoes</nuxt-link>
+                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/shoesicon.png" alt=""> Shoes</nuxt-link>
                     </a></li>
             </ul>
         </div>
@@ -45,7 +45,7 @@
             </div>
             <div class="searchInput">
                 <input type="text" name="" id="search">
-                <span><i class="bi bi-search"></i></span>
+                <span class="searchIcon"><i class="bi bi-search"></i></span>
             </div>
             <div class="login">
                 <h6>Login</h6>
@@ -97,7 +97,8 @@
     transition: all 0.3s;
 }
 
-.middle,.bottom {
+.middle,
+.bottom {
     margin-top: 5px;
 }
 
@@ -135,12 +136,20 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 9px;
+    font-size: 17px;
+    transition: all .3s;
 }
-
-.nav-content{
+.menu li:hover a {
+    margin-left: 5px;
+}
+.sidebar-Icon{
+    border-radius: 2px;
+}
+.nav-content {
     display: flex;
 }
+
 .logo {
     margin-left: 50px;
     padding-top: 16px;
@@ -148,17 +157,41 @@
 
 .logo img {
     width: 13em;
+    cursor: pointer;
 }
 
-.searchInput{
+.searchInput {
     margin: auto;
     margin-top: 15px;
+    position: relative;
 }
-#search{
+
+#search {
+    width: 700px;
     border: none;
     background: #fff;
     border-radius: 30px;
-    padding: 14px 200px;
+    padding: 14px 25px;
     z-index: 100;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.searchIcon {
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.login {
+    margin-right: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.login h6 {
+    margin-top: 27px;
+    cursor: pointer;
 }
 </style>
