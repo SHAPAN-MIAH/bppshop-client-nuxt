@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 .container {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .cart-container {

@@ -4,22 +4,27 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="ft-section1">
-                    <img width="" src="img/bppshops-logo.png" alt=""/>
+                    <img width="" src="img/bppshops-logo.png" alt="" />
 
                     <ul class="social-icons">
-                        <li>
-                            <a href="https://www.facebook.com/bppshopsofficial/">F</a>
+                        <li class="fb-icons">
+                            <a href="https://www.facebook.com/bppshopsofficial/"><i class="fa-brands fa-facebook-f"></i></a>
                         </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCTB1Orrb5WmTyb3Kuly1LCw">Y</a>
+                        <li class="yt-icons">
+                            <a href="https://www.youtube.com/channel/UCTB1Orrb5WmTyb3Kuly1LCw"><i class="fa-brands fa-youtube"></i></a>
                         </li>
-                        <li>
-                            <a href="https://twitter.com/BppShops">T</a>
+                        <li class="tw-icons">
+                            <a href="https://twitter.com/BppShops"><i class="fa-brands fa-twitter"></i></a>
                         </li>
-                        <li>
-                            <a href="linkedin.com/company/bppshops">L</a>
+                        <li class="in-icons">
+                            <a href="linkedin.com/company/bppshops"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
+                    <div class="location-email-number">
+                        <h6><i class="fa-solid fa-location-dot"></i> 17, Alhaz Samsuddin Mansion (9th Floor), Moghbazar, <br> New Easkaton, Ramna, Dhaka-1217</h6>
+                        <h6><i class="fa-solid fa-envelope"></i> support@bppshops.com</h6>
+                        <h6><i class="fa-solid fa-phone"></i> 09678822444</h6>
+                    </div>
                 </div>
             </div>
 
@@ -46,7 +51,7 @@ export default {
 
 <style scoped>
 .footer-container {
-    height: 400px;
+    height: 350px;
     padding: 40px 0px;
     margin-top: 20px;
     background-color: #000000;
@@ -57,13 +62,56 @@ export default {
 .ft-section1 img {
     width: 13em;
 }
+
+.social-icons {
+    margin: 20px;
+}
+
 .social-icons li {
     list-style: none;
     display: inline;
+    padding: 5px 10px;
+    border-radius: 7px;
+    padding-top: 8px;
+    margin: 5px;
 }
-.social-icons li a{
+
+.fb-icons {
+    background: #4A6DBF;
+    padding-right: 13px !important;
+    padding-left: 13px !important;
+}
+
+.yt-icons {
+    background: #F22231;
+}
+
+.tw-icons {
+    background: #2AC1F2;
+}
+
+.in-icons {
+    background: #0179B6;
+}
+
+.social-icons li a {
     text-decoration: none;
     color: #fff;
+    font-size: 15px;
+}
+
+.location-email-number{
+    margin-top: 50px;
+}
+.location-email-number h6 {
+    font-size: 15px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.location-email-number h6 i {
+    color: goldenrod;
+    padding-right: 10px;
     font-size: 20px;
 }
 </style>

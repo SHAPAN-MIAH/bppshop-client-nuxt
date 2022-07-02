@@ -60,9 +60,10 @@
     background: #EF8341;
     width: 100%;
     height: 80px;
-    /* position: fixed; */
+    position: fixed;
     z-index: 10;
     font-family: 'Rajdhani', sans-serif;
+    top: 0;
 }
 
 #sidebarMenu {
