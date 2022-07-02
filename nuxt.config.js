@@ -9,7 +9,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:"stylesheet", href:"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"},
+      { rel:"preconnect", href:"https://fonts.googleapis.com"},
+      {rel:"preconnect", href:"https://fonts.gstatic.com"},
+      {href:"https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap", rel:"stylesheet"},
     ]
   },
 
