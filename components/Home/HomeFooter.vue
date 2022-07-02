@@ -18,8 +18,10 @@
             <ul class="mt-3 social-icons">
               <li>
                 <a href="https://www.facebook.com/bppshopsofficial/"
-                  ><i class="fa fa-brands fa-facebook-f facebook-icon"></i
-                ></a>
+                  >asdasd
+                  
+                   <i class="fa-brands fa-facebook-f"></i>
+                  </a>
               </li>
               <li>
                 <a
