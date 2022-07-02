@@ -1,84 +1,69 @@
-
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"></link> -->
 <template>
-  <div>
-    <!-- <h1>this is Home footer</h1>
-    <button type="button" class="btn btn-success">Success</button> -->
+<div class="footer-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="ft-section1">
+                    <img width="" src="img/bppshops-logo.png" alt=""/>
 
-    <div class="container-homefooter">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="section1">
-            <img
-              src="https://bppshops.com/upload/logo/1733070357888263.png"
-              alt=""
-              height="40px"
-            />
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/bppshopsofficial/">F</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCTB1Orrb5WmTyb3Kuly1LCw">Y</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BppShops">T</a>
+                        </li>
+                        <li>
+                            <a href="linkedin.com/company/bppshops">L</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <ul class="mt-3 social-icons">
-              <li>
-                <a href="https://www.facebook.com/bppshopsofficial/"
-                  >asdasd
-                  
-                   <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCTB1Orrb5WmTyb3Kuly1LCw"
-                  ><i class="fa fa-brands fa-youtube youtube-icon"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/BppShops"
-                  ><i class="fa fa-brands fa-twitter twitter-icon"></i
-                ></a>
-              </li>
-              <li>
-                <a href="linkedin.com/company/bppshops"
-                  ><i class="fa fa-brands fa-linkedin-in linkedin-icon"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+            <div class="col-md-3">
+                WE ARE HERE TO HELP ! FAQ 24/7 CUSTOMER SUPPORT 09678822444
+            </div>
+            <div class="col-md-3">
+                KNOW US BETTER About Us Contact Us Privacy Policy Terms and Conditions
+                Return Policy
+            </div>
+            <div class="col-md-3">
+                MAKE MONEY WITH US Sell on BPPSHOPS Seller term & conditions
+            </div>
         </div>
-        <div class="col-md-3">
-          WE ARE HERE TO HELP ! FAQ 24/7 CUSTOMER SUPPORT 09678822444
-        </div>
-        <div class="col-md-3">
-          KNOW US BETTER About Us Contact Us Privacy Policy Terms and Conditions
-          Return Policy
-        </div>
-        <div class="col-md-3">
-          MAKE MONEY WITH US Sell on BPPSHOPS Seller term & conditions
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
-
-
-
-<!-- <style scoped src="@/node_modules/bootstrap/dist/css/bootstrap.css"></style> -->
-
-
-
 <style scoped>
-.container-homefooter {
-  margin-top: 50px;
-  background-color: #000000;
-  color: white;
+.footer-container {
+    height: 400px;
+    padding: 40px 0px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: white;
+    font-family: "Rajdhani", sans-serif;
 }
-.section1 {
-  background-color: aqua;
-  margin: 20px;
-  color: white;
+
+.ft-section1 img {
+    width: 13em;
+}
+.social-icons li {
+    list-style: none;
+    display: inline;
+}
+.social-icons li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
 </style>
-
-

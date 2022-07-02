@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 .container {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .cart-container {
@@ -94,7 +94,7 @@ export default {
     list-style: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin: 12px;
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-radius: 5px;
     transition: all .5s;
 }
@@ -121,5 +121,6 @@ export default {
     font-family: "Rajdhani", sans-serif;
     text-align: center;
     color: gray;
+    font-weight: 700;
 }
 </style>
