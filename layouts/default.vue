@@ -1,8 +1,9 @@
 <template>
     <div>
         <Nav />
-
         <nuxt />
+
+
         <FooterComp/>
 
     </div>
@@ -13,9 +14,12 @@ import Nav from '@/components/SharedComponent/Nav.vue'
 
 import FooterComp from '@/components/SharedComponent/footer.vue'
 
+
 export default {
     components: {
-        Nav,FooterComp
-    }
+    Nav,
+    FooterComp,
+
+}
 }
 </script>
