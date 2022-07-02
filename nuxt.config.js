@@ -10,16 +10,28 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel:"stylesheet", href:"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"},
-      { rel:"preconnect", href:"https://fonts.googleapis.com"},
-      {rel:"preconnect", href:"https://fonts.gstatic.com"},
-      {href:"https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap", rel:"stylesheet"},
+      { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      { href: "https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap", rel: "stylesheet" },
+      {
+        rel: 'stylesheet',
+        href: '/css/bootstrap.min.css'
+
+      },
+    ],
+    script: [
+      {
+        type: 'text/javascript',
+        src: '/js/bootstrap.bundle.min.js'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
+
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -32,7 +44,7 @@ export default {
   buildModules: [
     // Simple usage
     '@nuxtjs/vuetify',
-  
+
     // With options
     ['@nuxtjs/vuetify', { /* module options */ }]
   ],
