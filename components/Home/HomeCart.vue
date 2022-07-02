@@ -2,7 +2,7 @@
 <div class="container">
     <div class="cart-container">
         <li class="cart" v-for="item in category" :key="item.id">
-            <p :v-if="category.status">{{item.status}}</p>
+            <p v-if="item.status=='Upcoming'">{{item.status}}</p>
             <img :src='item.img' alt="">
             <h3>{{item.name}}</h3>
         </li>

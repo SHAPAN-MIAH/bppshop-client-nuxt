@@ -14,18 +14,15 @@ export default {
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       { href: "https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap", rel: "stylesheet" },
-      // {
-      //   rel: 'stylesheet',
-      //   href: '/css/bootstrap.min.css'
+     
 
-      // },
+
+
+
+
+     
     ],
-    // script: [
-    //   {
-    //     type: 'text/javascript',
-    //     src: '/js/bootstrap.bundle.min.js'
-    //   }
-    // ]
+ 
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -44,33 +41,41 @@ export default {
   buildModules: [
     // Simple usage
     '@nuxtjs/vuetify',
-
+    
     // With options
     ['@nuxtjs/vuetify', { /* module options */ }]
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-  ],
+  fontawesome: {
+    icons:
+    {
+    }
+
+  },
+
+
+// Modules: https://go.nuxtjs.dev/config-modules
+modules: [
+  // https://go.nuxtjs.dev/axios
+  '@nuxtjs/axios',
+  // https://go.nuxtjs.dev/pwa
+  '@nuxtjs/pwa',
+],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+  // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+  baseURL: '/',
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en'
-    }
-  },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+// PWA module configuration: https://go.nuxtjs.dev/pwa
+pwa: {
+  manifest: {
+    lang: 'en'
   }
+},
+
+// Build Configuration: https://go.nuxtjs.dev/config-build
+build: {
+}
 }
