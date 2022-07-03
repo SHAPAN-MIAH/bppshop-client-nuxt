@@ -1,10 +1,10 @@
 <template>
   <div class="common-footer-container">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row common-footer">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-containt">
-            <p class="footerCopyright">© All Right Reserved BPPSHOPS</p>
+            <p>© All Right Reserved BPPSHOPS</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
@@ -30,7 +30,7 @@
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="footer-containt">
             <div class="footer-social-containt">
-              <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
               <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
             </div>
           </div>
@@ -56,17 +56,10 @@ export default {
   color:white;
   text-align: center;
   font-family: "Rajdhani";
+  padding: 25px 0px;
 }
-.footer-containt{
-  margin:20px 0px;
-  padding-top:20px
-
-}
-.footer-containt p{
-  margin-top: 5px;
-}
-.footerCopyright{
-  padding-top: 40px;
+.common-footer{
+  align-items: center;
 }
 .footer-social-containt{
   display: flex;
@@ -75,19 +68,21 @@ export default {
   margin: 10px 60px;
 }
 .footer-social-containt i{
-  font-size: 42px;
+  font-size: 30px;
 }
 .fa-facebook-messenger{
-  color: #006AFF;
+  color: white;
+  background-color: #0a58ca;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 8px;
+  padding: 15px;
   border-radius: 30px;
 }
-.fa-whatsapp-square{
-  color: #0a58ca ;
+.fa-whatsapp{
+  color:white;
+  background-color: #25D366  ;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 10px;
-  border-radius: 30px;
+  padding: 15px 18px;
+  border-radius:30px;
 }
 
 </style>
