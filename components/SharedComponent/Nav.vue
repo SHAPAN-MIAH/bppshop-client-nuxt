@@ -173,6 +173,7 @@
     background: #fff;
     border-radius: 30px;
     padding: 14px 25px;
+    margin-left: -200px;
     z-index: 100;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -194,5 +195,74 @@
 .login h6 {
     margin-top: 27px;
     cursor: pointer;
+}
+
+
+/* responsive css */
+@media only screen and (max-width: 1400px) {
+    #search {
+    width: 680px;
+}
+}
+@media only screen and (max-width: 1300px) {
+    #search {
+    width: 650px;
+}
+}
+@media only screen and (max-width: 1200px) {
+    #search {
+    width: 600px;
+    padding: 14px 20px;
+    margin-left: -180px;
+}
+}
+@media only screen and (max-width: 1100px) {
+    #search {
+    width: 550px;
+    padding: 14px 20px;
+    margin-left: -180px;
+}
+}
+@media only screen and (max-width: 1000px) {
+    #search {
+    width: 500px;
+    padding: 14px 20px;
+    margin-left: -160px;
+}
+}
+@media only screen and (max-width: 992px) {
+    #search {
+    width: 450px;
+    padding: 12px 20px;
+    margin-left: -150px;
+}
+}
+@media only screen and (max-width: 892px) {
+    #search {
+    width: 400px;
+    padding: 12px 20px;
+    margin-left: -100px;
+}
+}
+@media only screen and (max-width: 768px) {
+    #search {
+    width: 350px;
+    padding: 12px 20px;
+    margin-left: -100px;
+}
+}
+@media only screen and (max-width: 668px) {
+    #search {
+    width: 300px;
+    padding: 12px 20px;
+    margin-left: -80px;
+}
+}
+@media only screen and (max-width: 576px) {
+    #search {
+    width: 250px;
+    padding: 12px 15px;
+    margin-left: -80px;
+}
 }
 </style>
