@@ -77,7 +77,7 @@ export default {
 }
 
 .cart-container {
-  width: 80%;
+  width: 67%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
@@ -120,7 +120,7 @@ export default {
 /*------- responsive css design------------- */
 @media screen and (max-width: 1400px) {
   .cart-container {
-    width: 90%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
@@ -128,7 +128,7 @@ export default {
 }
 @media screen and (max-width: 1200px) {
   .cart-container {
-     width: 90%;
+     width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
@@ -136,7 +136,7 @@ export default {
 }
 @media screen and (max-width: 992px) {
   .cart-container {
-     width: 90%;
+     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
@@ -144,7 +144,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .cart-container {
-    width: 95%;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
@@ -152,7 +152,7 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .cart-container {
-    width: 98%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
