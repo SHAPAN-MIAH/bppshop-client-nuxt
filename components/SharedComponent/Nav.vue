@@ -41,14 +41,16 @@
 
         <div class="nav-content">
             <div class="logo">
-                <img src="img/bppshops-logo.png" alt="">
+                <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="">
+                <img class="bpshopsIcon" src="img/bpp_icon.png" alt="">
             </div>
             <div class="searchInput">
-                <input type="text" name="" id="search" placeholder="Search by Product Category" >
+                <input type="text" name="" id="search" placeholder="Search by Product Category">
                 <span class="searchIcon"><i class="bi bi-search"></i></span>
             </div>
             <div class="login">
                 <h6>Login</h6>
+                <span class="threeDotMenuIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
             </div>
         </div>
     </nav>
@@ -129,7 +131,7 @@
 
 .menu li {
     color: #fff;
-    border-bottom: 1px solid rgba(225, 225, 225, 0.10);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.15);
 }
 
 .menu li a {
@@ -141,12 +143,15 @@
     font-size: 17px;
     transition: all .3s;
 }
+
 .menu li:hover a {
     margin-left: 5px;
 }
-.sidebar-Icon{
+
+.sidebar-Icon {
     border-radius: 2px;
 }
+
 .nav-content {
     display: flex;
 }
@@ -156,9 +161,15 @@
     padding-top: 16px;
 }
 
-.logo img {
+.bpshopsLogo {
     width: 13em;
     cursor: pointer;
+}
+
+.bpshopsIcon {
+    display: none;
+    transition: all 1s;
+    margin-left: 25px;
 }
 
 .searchInput {
@@ -177,6 +188,7 @@
     z-index: 100;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    transition: all .5s;
 }
 
 .searchIcon {
@@ -197,72 +209,154 @@
     cursor: pointer;
 }
 
+.threeDotMenuIcon {
+    color: #fff;
+    display: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
 
 /* responsive css */
 @media only screen and (max-width: 1400px) {
     #search {
-    width: 680px;
+        width: 600px;
+    }
 }
-}
+
 @media only screen and (max-width: 1300px) {
     #search {
-    width: 650px;
+        width: 550px;
+    }
 }
-}
+
 @media only screen and (max-width: 1200px) {
     #search {
-    width: 600px;
-    padding: 14px 20px;
-    margin-left: -180px;
+        width: 500px;
+        padding: 14px 20px;
+        margin-left: -180px;
+    }
 }
-}
+
 @media only screen and (max-width: 1100px) {
     #search {
-    width: 550px;
-    padding: 14px 20px;
-    margin-left: -180px;
+        width: 450px;
+        padding: 14px 20px;
+        margin-left: -180px;
+    }
 }
-}
+
 @media only screen and (max-width: 1000px) {
     #search {
-    width: 500px;
-    padding: 14px 20px;
-    margin-left: -160px;
+        width: 400px;
+        padding: 14px 20px;
+        margin-left: -160px;
+    }
 }
-}
-@media only screen and (max-width: 992px) {
+
+/* @media only screen and (max-width: 992px) {
     #search {
-    width: 450px;
-    padding: 12px 20px;
-    margin-left: -150px;
+        width: 450px;
+        padding: 12px 20px;
+        margin-left: -150px;
+    }
+} */
+
+@media only screen and (max-width: 900px) {
+    #search {
+        width: 370px;
+        padding: 14px 20px;
+        margin-left: -130px;
+    }
 }
-}
+
 @media only screen and (max-width: 892px) {
     #search {
-    width: 400px;
-    padding: 12px 20px;
-    margin-left: -100px;
+        width: 350px;
+        padding: 12px 20px;
+        margin-left: -100px;
+    }
 }
+
+@media only screen and (max-width: 800px) {
+    #search {
+        width: 320px;
+        padding: 12px 20px;
+        margin-left: -60px;
+    }
 }
+
 @media only screen and (max-width: 768px) {
     #search {
-    width: 350px;
-    padding: 12px 20px;
-    margin-left: -100px;
+        width: 300px;
+        padding: 12px 20px;
+        margin-left: -30px;
+    }
+
+    .bpshopsLogo {
+        display: none;
+    }
+
+    .bpshopsIcon {
+        display: block;
+        width: 45px;
+    }
+
+    .login h6 {
+        display: none;
+    }
+
+    .threeDotMenuIcon {
+        display: block;
+    }
 }
-}
+
 @media only screen and (max-width: 668px) {
     #search {
-    width: 300px;
-    padding: 12px 20px;
-    margin-left: -80px;
+        width: 270px;
+        padding: 12px 20px;
+        margin-left: -20px;
+    }
+
+    .bpshopsLogo {
+        display: none;
+    }
+
+    .bpshopsIcon {
+        display: block;
+        width: 45px;
+    }
+
+    .login h6 {
+        display: none;
+    }
+
+    .threeDotMenuIcon {
+        display: block;
+    }
 }
-}
+
 @media only screen and (max-width: 576px) {
     #search {
-    width: 250px;
-    padding: 12px 15px;
-    margin-left: -80px;
-}
+        width: 250px;
+        padding: 12px 15px;
+        margin-left: -10px;
+    }
+
+    .bpshopsLogo {
+        display: none;
+    }
+
+    .bpshopsIcon {
+        display: block;
+        width: 45px;
+        margin-left: 10px;
+    }
+    .login h6 {
+        display: none;
+    }
+
+    .threeDotMenuIcon {
+        display: block;
+    }
 }
 </style>
