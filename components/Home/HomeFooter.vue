@@ -307,4 +307,149 @@ export default {
 .payIcons img{
     /* margin-top: 20px; */
 }
+
+
+/* responsive css */
+@media only screen and (max-width: 1400px) {
+    #search {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #search {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #search {
+        width: 500px;
+        padding: 14px 20px;
+        margin-left: -180px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #search {
+        width: 450px;
+        padding: 14px 20px;
+        margin-left: -180px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #search {
+        width: 400px;
+        padding: 14px 20px;
+        margin-left: -160px;
+    }
+}
+
+/* @media only screen and (max-width: 992px) {
+    #search {
+        width: 450px;
+        padding: 12px 20px;
+        margin-left: -150px;
+    }
+} */
+
+@media only screen and (max-width: 900px) {
+    #search {
+        width: 370px;
+        padding: 14px 20px;
+        margin-left: -130px;
+    }
+}
+
+@media only screen and (max-width: 892px) {
+    #search {
+        width: 350px;
+        padding: 12px 20px;
+        margin-left: -100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #search {
+        width: 320px;
+        padding: 12px 20px;
+        margin-left: -60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #search {
+        width: 300px;
+        padding: 12px 20px;
+        margin-left: -30px;
+    }
+
+    .bpshopsLogo {
+        display: none;
+    }
+
+    .bpshopsIcon {
+        display: block;
+        width: 45px;
+    }
+
+    .login h6 {
+        display: none;
+    }
+
+    .threeDotMenuIcon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    #search {
+        width: 270px;
+        padding: 12px 20px;
+        margin-left: -20px;
+    }
+
+    .bpshopsLogo {
+        display: none;
+    }
+
+    .bpshopsIcon {
+        display: block;
+        width: 45px;
+    }
+
+    .login h6 {
+        display: none;
+    }
+
+    .threeDotMenuIcon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #search {
+        width: 250px;
+        padding: 12px 15px;
+        margin-left: -10px;
+    }
+
+    .bpshopsLogo {
+        display: none;
+    }
+
+    .bpshopsIcon {
+        display: block;
+        width: 45px;
+        margin-left: 10px;
+    }
+    .login h6 {
+        display: none;
+    }
+
+    .threeDotMenuIcon {
+        display: block;
+    }
+}
 </style>
