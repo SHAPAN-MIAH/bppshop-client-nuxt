@@ -128,7 +128,7 @@ export default {
 }
 @media screen and (max-width: 1200px) {
   .cart-container {
-     width: 75%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;

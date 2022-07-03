@@ -13,7 +13,7 @@
               <img src="img/ftLogo.png" />
             </div>
             <div>
-              <p>Our logistics Partner</p>
+              <p>Our logistics Partner Bpp Shop Courier</p>
             </div>
           </div>
         </div>
@@ -53,10 +53,10 @@ export default {
 <style scoped>
 .common-footer-container {
   background-color: #2a2a2a;
-  color: white;
+  color: rgba(242, 231, 231, 0.813);
   text-align: center;
   font-family: "Rajdhani";
-  padding: 25px 0px;
+  padding: 20px 0px;
 }
 .common-footer{
   align-items: center;
