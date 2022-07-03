@@ -2,7 +2,7 @@
 <div class="footer-container">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="ft-section1">
                     <img width="" src="img/bppshops-logo.png" alt="" />
 
@@ -20,6 +20,7 @@
                             <a href="linkedin.com/company/bppshops"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
+
                     <div class="location-email-number">
                         <h6><i class="fa-solid fa-location-dot"></i> 17, Alhaz Samsuddin Mansion (9th Floor), Moghbazar, <br> New Easkaton, Ramna, Dhaka-1217</h6>
                         <h6><i class="fa-solid fa-envelope"></i> support@bppshops.com</h6>
@@ -28,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="ft-section2">
                     <h2>WE ARE HERE TO HELP!</h2>
                     <h3>FAQ</h3>
@@ -36,7 +37,7 @@
                     <h3><i class="fa-solid fa-phone"></i> 09678822444</h3>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
                 <div class="ft-section3">
                     <h2>KNOW US BETTER</h2>
                     <p>About Us</p>
@@ -47,7 +48,7 @@
                 </div>
 
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="ft-section4">
                     <h2>MAKE MONEY WITH US</h2>
                     <p>Sell on BPPSHOPS</p>
@@ -100,7 +101,8 @@ export default {
 
 <style scoped>
 .footer-container {
-    height: 530px;
+    /* height: 530px; */
+    height: auto;
     padding: 40px 0px;
     margin-top: 20px;
     margin-bottom: -20px;
@@ -307,4 +309,12 @@ export default {
 .payIcons img{
     /* margin-top: 20px; */
 }
+/*---------------- responsive css design ------------------*/
+ @media screen and (max-width: 576px) {
+  .footer-container {
+    height: auto;
+    text-align: center;
+}
+}
+
 </style>
