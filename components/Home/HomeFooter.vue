@@ -2,7 +2,7 @@
 <div class="footer-container">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="ft-section1">
                     <img width="" src="img/bppshops-logo.png" alt="" />
 
@@ -20,6 +20,7 @@
                             <a href="linkedin.com/company/bppshops"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
+
                     <div class="location-email-number">
                         <h6><i class="fa-solid fa-location-dot"></i> 17, Alhaz Samsuddin Mansion (9th Floor), Moghbazar, <br> New Easkaton, Ramna, Dhaka-1217</h6>
                         <h6><i class="fa-solid fa-envelope"></i> support@bppshops.com</h6>
@@ -28,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="ft-section2">
                     <h2>WE ARE HERE TO HELP!</h2>
                     <h3>FAQ</h3>
@@ -36,7 +37,7 @@
                     <h3><i class="fa-solid fa-phone"></i> 09678822444</h3>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3 text-center">
                 <div class="ft-section3">
                     <h2>KNOW US BETTER</h2>
                     <p>About Us</p>
@@ -47,7 +48,7 @@
                 </div>
 
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="ft-section4">
                     <h2>MAKE MONEY WITH US</h2>
                     <p>Sell on BPPSHOPS</p>
@@ -69,22 +70,23 @@
             <div class="paywith-container-icons">
                 <h4>Pay With</h4>
                 <div class="payIcons">
-                    <img width="70" src="/img/icons/bppshops_ssl.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_ab_bank.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_brack_bank.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_city_bank.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_islamic.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_bk_asia.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_dbbl.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_q.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_bk.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_mtb.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_sure_cash.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_oupy.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_m_cash.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_-_cash.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_my.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_fast.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_ssl.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_ab_bank.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_brack_bank.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_city_bank.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_islamic.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_bk_asia.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_dbbl.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_q.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_bk.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_mtb.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_sure_cash.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_oupy.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_m_cash.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_-_cash.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_my.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_fast.webp" alt="">
+                    
                 </div>
             </div>
         </div>
@@ -100,7 +102,8 @@ export default {
 
 <style scoped>
 .footer-container {
-    height: 530px;
+    /* height: 530px; */
+    height: auto;
     padding: 40px 0px;
     margin-top: 20px;
     margin-bottom: -20px;
@@ -199,93 +202,104 @@ export default {
     cursor: pointer;
 }
 
-.subscribeBtn{
+.subscribeBtn {
     outline: none;
     padding: 12px 40px;
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.subscribeBtn:hover{
-	color: #FAA919;
-}
-.subscribeBtn span:nth-child(1){
-	position: absolute;
-    top: 0;
-		left: 0;
-		width: 100%;
-		height: 1px;
-		background: linear-gradient(to right, #ffffff8c, #FAA919);
-		animation: animate1 2s linear infinite;
-}
-@keyframes animate1{
-	0%{
-		transform: translateX(-100%);
-	}
-	100%{
-		transform: translateX(100%);
-	}
-}
-.subscribeBtn span:nth-child(2){
-	position: absolute;
-    top: 0;
-		right: 0;
-		width: 1px;
-		height: 100%;
-		background: linear-gradient(to bottom, #ffffff8c, #FAA919);
-		animation: animate2 2s linear infinite;
-		animation-delay: 1s;
-}
-@keyframes animate2{
-	0%{
-		transform: translateY(-100%);
-	}
-	100%{
-		transform: translateY(100%);
-	}
-}
-.subscribeBtn span:nth-child(3){
-	position: absolute;
-    bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 1px;
-		background: linear-gradient(to left, #ffffff8c, #FAA919);
-		animation: animate3 2s linear infinite;
-}
-@keyframes animate3{
-	0%{
-		transform: translateX(100%);
-	}
-	100%{
-		transform: translateX(-100%);
-	}
-}
-.subscribeBtn span:nth-child(4){
-	position: absolute;
-    top: 0;
-		left: 0;
-		width: 1px;
-		height: 100%;
-		background: linear-gradient(to top, #ffffff8c, #FAA919);
-		animation: animate4 2s linear infinite;
-		animation-delay: 1s;
-}
-@keyframes animate4{
-	0%{
-		transform: translateY(100%);
-	}
-	100%{
-		transform: translateY(-100%);
-	}
+.subscribeBtn:hover {
+    color: #FAA919;
 }
 
+.subscribeBtn span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #ffffff8c, #FAA919);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.subscribeBtn span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff8c, #FAA919);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.subscribeBtn span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, #ffffff8c, #FAA919);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.subscribeBtn span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, #ffffff8c, #FAA919);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
 
 /* paywith-container-icons css*/
-.paywith-container-icons{
+.paywith-container-icons {
     display: flex;
     background: #fff;
     width: 100%;
@@ -295,161 +309,149 @@ export default {
     padding: 10px 0px;
     border-radius: 5px;
 }
-.paywith-container-icons h4{
+
+.paywith-container-icons h4 {
     margin: 0px 50px;
 }
-.payIcons{
+
+.payIcons {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 30px;
     align-items: center;
 }
-.payIcons img{
+
+.payIcons img {
     /* margin-top: 20px; */
 }
 
-
-/* responsive css */
-@media only screen and (max-width: 1400px) {
-    #search {
-        width: 600px;
+/*---------------- responsive css design ------------------*/
+/* @media screen and (max-width: 1600px) {
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin: 0px 20px;
+    }
+    .payIcons img {
+        width: 40px;
     }
 }
-
-@media only screen and (max-width: 1300px) {
-    #search {
-        width: 550px;
+@media screen and (max-width: 1400px) {
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin: 0px 20px;
     }
-}
-
-@media only screen and (max-width: 1200px) {
-    #search {
-        width: 500px;
-        padding: 14px 20px;
-        margin-left: -180px;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    #search {
-        width: 450px;
-        padding: 14px 20px;
-        margin-left: -180px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #search {
-        width: 400px;
-        padding: 14px 20px;
-        margin-left: -160px;
-    }
-}
-
-/* @media only screen and (max-width: 992px) {
-    #search {
-        width: 450px;
-        padding: 12px 20px;
-        margin-left: -150px;
+    .payIcons img {
+        width: 40px;
     }
 } */
+@media screen and (max-width: 1200px) {
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
 
-@media only screen and (max-width: 900px) {
-    #search {
-        width: 370px;
-        padding: 14px 20px;
-        margin-left: -130px;
+    .paywith-container-icons h4 {
+        text-align: center;
+        margin: 10px 0px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+    .payIcons img {
+        width: 40px;
     }
 }
 
-@media only screen and (max-width: 892px) {
-    #search {
-        width: 350px;
-        padding: 12px 20px;
-        margin-left: -100px;
+@media screen and (max-width: 992px) {
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .paywith-container-icons h4 {
+        text-align: center;
+        margin: 10px 0px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 20px;
+        margin-left: 50px;
+    }
+
+    .payIcons img {
+        width: 40px;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    #search {
-        width: 320px;
-        padding: 12px 20px;
-        margin-left: -60px;
+@media screen and (max-width: 768px) {
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .paywith-container-icons h4 {
+        margin: 10px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 20px;
+        margin-left: 50px;
+    }
+
+    .payIcons img {
+        width: 40px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    #search {
-        width: 300px;
-        padding: 12px 20px;
-        margin-left: -30px;
+@media screen and (max-width: 576px) {
+    .footer-container {
+        height: auto;
+        text-align: center;
     }
 
-    .bpshopsLogo {
-        display: none;
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
     }
 
-    .bpshopsIcon {
-        display: block;
-        width: 45px;
+    .paywith-container-icons h4 {
+        margin: 10px;
+
     }
 
-    .login h6 {
-        display: none;
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 10px;
     }
 
-    .threeDotMenuIcon {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 668px) {
-    #search {
-        width: 270px;
-        padding: 12px 20px;
-        margin-left: -20px;
-    }
-
-    .bpshopsLogo {
-        display: none;
-    }
-
-    .bpshopsIcon {
-        display: block;
-        width: 45px;
-    }
-
-    .login h6 {
-        display: none;
-    }
-
-    .threeDotMenuIcon {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    #search {
-        width: 250px;
-        padding: 12px 15px;
-        margin-left: -10px;
-    }
-
-    .bpshopsLogo {
-        display: none;
-    }
-
-    .bpshopsIcon {
-        display: block;
-        width: 45px;
-        margin-left: 10px;
-    }
-    .login h6 {
-        display: none;
-    }
-
-    .threeDotMenuIcon {
-        display: block;
+    .payIcons img {
+        width: 40px;
     }
 }
 </style>
