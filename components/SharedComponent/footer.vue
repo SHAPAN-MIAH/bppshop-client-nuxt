@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "commonFooter"
+  name: "commonFooter",
 };
 </script>
 
@@ -53,7 +53,7 @@ export default {
 <style scoped>
 .common-footer-container {
   background-color: #2a2a2a;
-  color:white;
+  color: white;
   text-align: center;
   font-family: "Rajdhani";
   padding: 25px 0px;
@@ -61,7 +61,7 @@ export default {
 .common-footer{
   align-items: center;
 }
-.footer-social-containt{
+.footer-social-containt {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -84,5 +84,4 @@ export default {
   padding: 15px 18px;
   border-radius:30px;
 }
-
 </style>
