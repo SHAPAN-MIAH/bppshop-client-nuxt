@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "commonFooter"
+  name: "commonFooter",
 };
 </script>
 
@@ -53,41 +53,39 @@ export default {
 <style scoped>
 .common-footer-container {
   background-color: #2a2a2a;
-  color:white;
+  color: white;
   text-align: center;
   font-family: "Rajdhani";
 }
-.footer-containt{
-  margin:20px 0px;
-  padding-top:20px
-
+.footer-containt {
+  margin: 20px 0px;
+  padding-top: 20px;
 }
-.footer-containt p{
+.footer-containt p {
   margin-top: 5px;
 }
-.footerCopyright{
+.footerCopyright {
   padding-top: 40px;
 }
-.footer-social-containt{
+.footer-social-containt {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 10px 60px;
 }
-.footer-social-containt i{
+.footer-social-containt i {
   font-size: 42px;
 }
-.fa-facebook-messenger{
-  color: #006AFF;
+.fa-facebook-messenger {
+  color: #006aff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 8px;
   border-radius: 30px;
 }
-.fa-whatsapp-square{
-  color: #0a58ca ;
+.fa-whatsapp-square {
+  color: #0a58ca;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 10px;
   border-radius: 30px;
 }
-
 </style>
