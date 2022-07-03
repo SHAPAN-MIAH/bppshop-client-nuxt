@@ -77,7 +77,7 @@ export default {
 }
 
 .cart-container {
-  width: 67%;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
