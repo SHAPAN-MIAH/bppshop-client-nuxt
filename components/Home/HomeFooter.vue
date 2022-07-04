@@ -70,22 +70,23 @@
             <div class="paywith-container-icons">
                 <h4>Pay With</h4>
                 <div class="payIcons">
-                    <img width="70" src="/img/icons/bppshops_ssl.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_ab_bank.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_brack_bank.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_city_bank.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_islamic.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_bk_asia.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_dbbl.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_q.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_bk.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_mtb.webp" alt="">
-                    <img width="70" src="/img/icons/bppshops_sure_cash.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_oupy.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_m_cash.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_-_cash.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_my.webp" alt="">
-                    <img width="40" src="/img/icons/bppshops_fast.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_ssl.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_ab_bank.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_brack_bank.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_city_bank.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_islamic.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_bk_asia.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_dbbl.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_q.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_bk.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_mtb.webp" alt="">
+                        <img width="70" src="/img/icons/bppshops_sure_cash.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_oupy.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_m_cash.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_-_cash.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_my.webp" alt="">
+                        <img width="40" src="/img/icons/bppshops_fast.webp" alt="">
+                    
                 </div>
             </div>
         </div>
@@ -201,93 +202,104 @@ export default {
     cursor: pointer;
 }
 
-.subscribeBtn{
+.subscribeBtn {
     outline: none;
     padding: 12px 40px;
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.subscribeBtn:hover{
-	color: #FAA919;
-}
-.subscribeBtn span:nth-child(1){
-	position: absolute;
-    top: 0;
-		left: 0;
-		width: 100%;
-		height: 1px;
-		background: linear-gradient(to right, #ffffff8c, #FAA919);
-		animation: animate1 2s linear infinite;
-}
-@keyframes animate1{
-	0%{
-		transform: translateX(-100%);
-	}
-	100%{
-		transform: translateX(100%);
-	}
-}
-.subscribeBtn span:nth-child(2){
-	position: absolute;
-    top: 0;
-		right: 0;
-		width: 1px;
-		height: 100%;
-		background: linear-gradient(to bottom, #ffffff8c, #FAA919);
-		animation: animate2 2s linear infinite;
-		animation-delay: 1s;
-}
-@keyframes animate2{
-	0%{
-		transform: translateY(-100%);
-	}
-	100%{
-		transform: translateY(100%);
-	}
-}
-.subscribeBtn span:nth-child(3){
-	position: absolute;
-    bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 1px;
-		background: linear-gradient(to left, #ffffff8c, #FAA919);
-		animation: animate3 2s linear infinite;
-}
-@keyframes animate3{
-	0%{
-		transform: translateX(100%);
-	}
-	100%{
-		transform: translateX(-100%);
-	}
-}
-.subscribeBtn span:nth-child(4){
-	position: absolute;
-    top: 0;
-		left: 0;
-		width: 1px;
-		height: 100%;
-		background: linear-gradient(to top, #ffffff8c, #FAA919);
-		animation: animate4 2s linear infinite;
-		animation-delay: 1s;
-}
-@keyframes animate4{
-	0%{
-		transform: translateY(100%);
-	}
-	100%{
-		transform: translateY(-100%);
-	}
+.subscribeBtn:hover {
+    color: #FAA919;
 }
 
+.subscribeBtn span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #ffffff8c, #FAA919);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.subscribeBtn span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff8c, #FAA919);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.subscribeBtn span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, #ffffff8c, #FAA919);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.subscribeBtn span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, #ffffff8c, #FAA919);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
 
 /* paywith-container-icons css*/
-.paywith-container-icons{
+.paywith-container-icons {
     display: flex;
     background: #fff;
     width: 100%;
@@ -297,22 +309,149 @@ export default {
     padding: 10px 0px;
     border-radius: 5px;
 }
-.paywith-container-icons h4{
+
+.paywith-container-icons h4 {
     margin: 0px 50px;
 }
-.payIcons{
+
+.payIcons {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 30px;
     align-items: center;
 }
 
-/*---------------- responsive css design ------------------*/
- @media screen and (max-width: 576px) {
-  .footer-container {
-    height: auto;
-    text-align: center;
-}
+.payIcons img {
+    /* margin-top: 20px; */
 }
 
+/*---------------- responsive css design ------------------*/
+/* @media screen and (max-width: 1600px) {
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin: 0px 20px;
+    }
+    .payIcons img {
+        width: 40px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin: 0px 20px;
+    }
+    .payIcons img {
+        width: 40px;
+    }
+} */
+@media screen and (max-width: 1200px) {
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .paywith-container-icons h4 {
+        text-align: center;
+        margin: 10px 0px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+    .payIcons img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .paywith-container-icons h4 {
+        text-align: center;
+        margin: 10px 0px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 20px;
+        margin-left: 50px;
+    }
+
+    .payIcons img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .paywith-container-icons h4 {
+        margin: 10px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 20px;
+        margin-left: 50px;
+    }
+
+    .payIcons img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container {
+        height: auto;
+        text-align: center;
+    }
+
+    .paywith-container-icons {
+        display: inline;
+        margin: 10px;
+    }
+
+    .paywith-container-icons h4 {
+        margin: 10px;
+
+    }
+
+    .payIcons {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: 0px 10px;
+    }
+
+    .payIcons img {
+        width: 40px;
+    }
+}
 </style>
