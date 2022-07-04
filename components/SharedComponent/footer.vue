@@ -1,91 +1,137 @@
 <template>
-  <div class="common-footer-container">
-    <div class="container-fluid">
-      <div class="row common-footer">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="footer-containt">
+<div class="common-footer">
+    <div class=" common-footer-container">
+        <div class="footer-content">
             <p>© All Right Reserved BPPSHOPS</p>
-          </div>
+            <div class="IT-Partner">
+                <img width="130" src="img/excelitlogo.png" />
+                <p>Our IT Partner</p>
+            </div>
+            <div class="logistics-Partner">
+                <img width="40" src="img/ftLogo.png" />
+                <p>Our logistics Partner Bpp Shop Courier</p>
+            </div>
+            <div class="footer-social-container">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="footer-containt">
-            <div>
-              <img src="img/ftLogo.png" />
-            </div>
-            <div>
-              <p>Our logistics Partner Bpp Shop Courier</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="footer-containt">
-            <div>
-              <img src="img/excelitlogo.png" />
-            </div>
-            <div>
-              <p>Our IT Partner</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="footer-containt">
-            <div class="footer-social-containt">
-              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-
-
-
-  </div>
+</div>
 </template>
-
-
 
 <script>
 export default {
-  name: "commonFooter",
+    name: "commonFooter",
 };
 </script>
 
-
-
 <style scoped>
+.common-footer {
+    background: #2a2a2a;
+    font-family: "Rajdhani", sans-serif;
+    color: #fff;
+}
+
 .common-footer-container {
-  background-color: #2a2a2a;
-  color: rgba(242, 231, 231, 0.813);
-  text-align: center;
-  font-family: "Rajdhani";
-  padding: 20px 0px;
+    margin: 0px 70px;
+    padding: 40px 0px;
 }
-.common-footer{
-  align-items: center;
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
-.footer-social-containt {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10px 60px;
+
+.footer-social-container {
+    margin-left: auto;
 }
-.footer-social-containt i{
-  font-size: 30px;
+
+.fa-whatsapp {
+    color: white;
+    background-color: #25D366;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px 17px;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-right: 50px;
 }
-.fa-facebook-messenger{
-  color: white;
-  background-color: #0a58ca;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 15px;
-  border-radius: 30px;
+
+.fa-whatsapp:hover,
+.fa-facebook-messenger:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-.fa-whatsapp{
-  color:white;
-  background-color: #25D366  ;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 15px 18px;
-  border-radius:30px;
+
+.fa-facebook-messenger {
+    color: white;
+    background-color: #0A7CFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+/* Footer responsive css */
+@media screen and (max-width: 992px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .footer-social-container {
+        display: flex;
+        margin-top: 10px !important;
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .fa-whatsapp {
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .footer-social-container {
+        display: flex;
+        margin-top: 20px !important;
+        margin: auto;
+    }
+
+    .IT-Partner {
+        margin: 20px;
+    }
+
+    .fa-whatsapp {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .footer-social-container {
+        display: flex;
+        margin-top: 20px !important;
+        margin: auto;
+    }
+
+    .IT-Partner {
+        margin: 20px;
+    }
+
+    .fa-whatsapp {
+        margin-right: 30px;
+    }
 }
 </style>
