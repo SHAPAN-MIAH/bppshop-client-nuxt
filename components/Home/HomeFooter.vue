@@ -329,7 +329,7 @@ export default {
 
 }
 .payIcon img{
-    
+
     width: 34px;
     /* width: 60px; */
     /* margin: 0px 20px; */
