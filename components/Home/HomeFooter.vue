@@ -80,7 +80,7 @@
         </div>
     </div> -->
 
-    <div class="container-fluid paywithContainer">
+    <div class="container-fluid paywithContainer mt-5 mb-3">
         <div class="d-flex flex-wrap justify-content-around align-items-center p-3 border rounded bg-light">
             <div class="d-flex align-items-center">
                 <h5 class="text-dark">Pay With --</h5>
@@ -329,10 +329,7 @@ export default {
 
 }
 .payIcon img{
-
-    width: 34px;
-    /* width: 60px; */
-    /* margin: 0px 20px; */
+    height: 40px;
 }
 
 /*---------------- responsive css design ------------------*/
