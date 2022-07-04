@@ -306,9 +306,7 @@ export default {
     grid-gap: 30px;
     align-items: center;
 }
-.payIcons img{
-    /* margin-top: 20px; */
-}
+
 /*---------------- responsive css design ------------------*/
  @media screen and (max-width: 576px) {
   .footer-container {
