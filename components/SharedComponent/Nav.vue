@@ -1,56 +1,58 @@
 <template>
 <div class="navbar">
     <nav class="nav">
-        <input type="checkbox" name="" id="openSidebarmenu">
-        <label for="openSidebarmenu" class="sidebarIconToggle">
-            <div class="spinner top"></div>
-            <div class="spinner middle"></div>
-            <div class="spinner bottom"></div>
-        </label>
-        <div id="sidebarMenu">
-            <ul class="menu">
-                <li><a href="">
-                        <nuxt-link to="/"><i class="bi bi-house-door-fill"></i> Home</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/islamicicon.png" alt=""> Islamic Products</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/groceryicon.png" alt=""> Grocery</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/fasionicon.png" alt=""> Fashion</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/electronicicon.png" alt=""> Electronics</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/babycareicon.png" alt=""> Baby Care</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/cosmaticicon.png" alt=""> Cosmetics</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/furntureicon.png" alt=""> Furniture</nuxt-link>
-                    </a></li>
-                <li><a href="">
-                        <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/shoesicon.png" alt=""> Shoes</nuxt-link>
-                    </a></li>
-            </ul>
-        </div>
+        <div class="nav-container">
+            <input type="checkbox" name="" id="openSidebarmenu">
+            <label for="openSidebarmenu" class="sidebarIconToggle">
+                <div class="spinner top"></div>
+                <div class="spinner middle"></div>
+                <div class="spinner bottom"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="menu">
+                    <li><a href="">
+                            <nuxt-link to="/"><i class="bi bi-house-door-fill"></i> Home</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/islamicicon.png" alt=""> Islamic Products</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/groceryicon.png" alt=""> Grocery</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/fasionicon.png" alt=""> Fashion</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/electronicicon.png" alt=""> Electronics</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/babycareicon.png" alt=""> Baby Care</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/cosmaticicon.png" alt=""> Cosmetics</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/furntureicon.png" alt=""> Furniture</nuxt-link>
+                        </a></li>
+                    <li><a href="">
+                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/shoesicon.png" alt=""> Shoes</nuxt-link>
+                        </a></li>
+                </ul>
+            </div>
 
-        <div class="nav-content">
-            <div class="logo">
-                <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="">
-                <img class="bpshopsIcon" src="img/bpp_icon.png" alt="">
-            </div>
-            <div class="searchInput">
-                <input type="text" name="" id="search" placeholder="Search by Product Category">
-                <span class="searchIcon"><i class="bi bi-search"></i></span>
-            </div>
-            <div class="login">
-                <h6>Login</h6>
-                <span class="threeDotMenuIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            <div class="nav-content">
+                <div class="logo">
+                    <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="">
+                    <img class="bpshopsIcon" src="img/bpp_icon.png" alt="">
+                </div>
+                <div class="searchInput">
+                    <input type="text" name="" id="search" placeholder="Search by Product Category">
+                    <span class="searchIcon"><i class="bi bi-search"></i></span>
+                </div>
+                <div class="login">
+                    <h6>Login</h6>
+                    <span class="threeDotMenuIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -67,7 +69,6 @@
     font-family: 'Rajdhani', sans-serif;
     top: 0;
 }
-
 #sidebarMenu {
     height: 100%;
     position: fixed;
@@ -183,7 +184,7 @@
     border: none;
     background: #fff;
     border-radius: 30px;
-    padding: 14px 25px;
+    padding: 16px 25px;
     margin-left: -200px;
     z-index: 100;
     outline: none;
@@ -351,6 +352,7 @@
         width: 45px;
         margin-left: 10px;
     }
+
     .login h6 {
         display: none;
     }
