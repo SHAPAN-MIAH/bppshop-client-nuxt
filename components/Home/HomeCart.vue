@@ -39,7 +39,7 @@ export default {
           name: "Fashion",
           img: "img/categoryImg/fashion.webp",
           status: "",
-          route:"Fashion"
+          route:"fashion"
 
         },
         {
@@ -47,7 +47,7 @@ export default {
           name: "Electronics",
           img: "img/categoryImg/electronics.webp",
           status: "Upcoming",
-          route:"Electronics"
+          route:"electronics"
 
         },
         {
@@ -55,7 +55,7 @@ export default {
           name: "Baby Care",
           img: "img/categoryImg/baby_care.webp",
           status: "Upcoming",
-          route:"BabyCare"
+          route:"babyCare"
 
         },
         {
@@ -63,7 +63,7 @@ export default {
           name: "Cosmetics",
           img: "img/categoryImg/cosmetic.webp",
           status: "Upcoming",
-          route:"Cosmetics"
+          route:"cosmetics"
 
         },
         {
@@ -71,7 +71,7 @@ export default {
           name: "Furniture",
           img: "img/categoryImg/furniture.webp",
           status: "Upcoming",
-          route:"Furniture"
+          route:"furniture"
 
         },
         {
@@ -79,7 +79,7 @@ export default {
           name: "Shoes",
           img: "img/categoryImg/shoe.webp",
           status: "Upcoming",
-          route:"Shoes"
+          route:"shoes"
 
         },
       ],
@@ -89,7 +89,9 @@ export default {
 </script>
 
 <style scoped>
-
+a{
+  text-decoration: none;
+}
 .container {
   margin-top: 100px;
 }

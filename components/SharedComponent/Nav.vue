@@ -14,37 +14,39 @@
                             <nuxt-link to="/"><i class="bi bi-house-door-fill"></i> Home</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/islamicicon.png" alt=""> Islamic Products</nuxt-link>
+                            <nuxt-link to="/islamic"><img width="15" class="sidebar-Icon" src="img/islamicicon.png" alt=""> Islamic Products</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/groceryicon.png" alt=""> Grocery</nuxt-link>
+                            <nuxt-link to="/grocery"><img width="15" class="sidebar-Icon" src="img/groceryicon.png" alt=""> Grocery</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/fasionicon.png" alt=""> Fashion</nuxt-link>
+                            <nuxt-link to="/fashion"><img width="15" class="sidebar-Icon" src="img/fasionicon.png" alt=""> Fashion</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/electronicicon.png" alt=""> Electronics</nuxt-link>
+                            <nuxt-link to="/electronics"><img width="15" class="sidebar-Icon" src="img/electronicicon.png" alt=""> Electronics</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/babycareicon.png" alt=""> Baby Care</nuxt-link>
+                            <nuxt-link to="/babyCare"><img width="15" class="sidebar-Icon" src="img/babycareicon.png" alt=""> Baby Care</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/cosmaticicon.png" alt=""> Cosmetics</nuxt-link>
+                            <nuxt-link to="/cosmetics"><img width="15" class="sidebar-Icon" src="img/cosmaticicon.png" alt=""> Cosmetics</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/furntureicon.png" alt=""> Furniture</nuxt-link>
+                            <nuxt-link to="/furniture"><img width="15" class="sidebar-Icon" src="img/furntureicon.png" alt=""> Furniture</nuxt-link>
                         </a></li>
                     <li><a href="">
-                            <nuxt-link to="/"><img width="15" class="sidebar-Icon" src="img/shoesicon.png" alt=""> Shoes</nuxt-link>
+                            <nuxt-link to="/shoes"><img width="15" class="sidebar-Icon" src="img/shoesicon.png" alt=""> Shoes</nuxt-link>
                         </a></li>
                 </ul>
             </div>
 
             <div class="nav-content">
-                <div class="logo">
-                    <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="">
-                    <img class="bpshopsIcon" src="img/bpp_icon.png" alt="">
-                </div>
+                <nuxt-link to="/">
+                    <div class="logo">
+                        <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="">
+                        <img class="bpshopsIcon" src="img/bpp_icon.png" alt="">
+                    </div>
+                </nuxt-link>
                 <div class="searchInput">
                     <input type="text" name="" id="search" placeholder="Search by Product Category">
                     <span class="searchIcon"><i class="bi bi-search"></i></span>
@@ -69,6 +71,7 @@
     font-family: 'Rajdhani', sans-serif;
     top: 0;
 }
+
 #sidebarMenu {
     height: 100%;
     position: fixed;

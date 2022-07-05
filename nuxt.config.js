@@ -19,14 +19,6 @@ export default {
       crossorigin:"anonymous",
       referrerpolicy:"no-referrer"},
 
-     
-     
-
-
-
-
-
-     
     ],
  
   },
@@ -53,12 +45,12 @@ export default {
   //  ['@nuxtjs/vuetify', { /* module options */ }]
   ],
 
-  fontawesome: {
-    icons:
-    {
-    }
+  // fontawesome: {
+  //   icons:
+  //   {
+  //   }
 
-  },
+  // },
 
 
 // Modules: https://go.nuxtjs.dev/config-modules
