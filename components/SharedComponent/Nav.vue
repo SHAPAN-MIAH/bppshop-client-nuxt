@@ -276,7 +276,7 @@
 @media only screen and (max-width: 892px) {
     #search {
         width: 350px;
-        padding: 12px 20px;
+        padding: 14px 20px;
         margin-left: -100px;
     }
 }
@@ -284,7 +284,7 @@
 @media only screen and (max-width: 800px) {
     #search {
         width: 320px;
-        padding: 12px 20px;
+        padding: 14px 20px;
         margin-left: -60px;
     }
 }
@@ -292,7 +292,7 @@
 @media only screen and (max-width: 768px) {
     #search {
         width: 300px;
-        padding: 12px 20px;
+        padding: 14px 20px;
         margin-left: -30px;
     }
 
@@ -317,7 +317,7 @@
 @media only screen and (max-width: 668px) {
     #search {
         width: 270px;
-        padding: 12px 20px;
+        padding: 14px 20px;
         margin-left: -20px;
     }
 
@@ -342,7 +342,7 @@
 @media only screen and (max-width: 576px) {
     #search {
         width: 250px;
-        padding: 12px 15px;
+        padding: 14px 15px;
         margin-left: -10px;
     }
 

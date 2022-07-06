@@ -26,6 +26,11 @@ export default {
 };
 </script>
 
+
+
+<style scoped src="@/node_modules/bootstrap/dist/css/bootstrap.css"></style>
+<style scoped src="@/node_modules/bootstrap-vue/dist/bootstrap-vue.css"></style> 
+
 <style scoped>
 .common-footer {
     background: #2a2a2a;

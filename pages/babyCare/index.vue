@@ -1,5 +1,5 @@
 <template>
-    <h1>This is baby care page</h1>
+    <h1>Baby care product upcoming</h1>
 </template>
 
 <script>
@@ -10,6 +10,6 @@
 
 <style scoped>
 h1{
-    margin: 100px 0px;
+    /* margin: 0px 0px; */
 }
 </style>

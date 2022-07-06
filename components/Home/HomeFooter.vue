@@ -113,7 +113,9 @@ export default {
 </script>
 
 <style scoped src="@/node_modules/bootstrap/dist/css/bootstrap.css"></style>
-<style scoped src="@/node_modules/bootstrap-vue/dist/bootstrap-vue.css"></style><style scoped>
+<style scoped src="@/node_modules/bootstrap-vue/dist/bootstrap-vue.css"></style>
+
+<style scoped>
 .footer-container {
     height: auto;
     padding: 40px 0px;
