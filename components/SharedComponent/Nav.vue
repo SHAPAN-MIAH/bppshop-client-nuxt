@@ -158,7 +158,7 @@ export default {
   mounted() {
     window.onload = function () {
       var sp = new SuperPlaceholder({
-        placeholders: ["By Product Name....", "By Category....","By Brand Name....","By Product Code...."],
+        placeholders: ["By Product Name.....", "By Product Category.....","By Brand Name.....","By Product Code....."],
         preText: "Search",
         stay: 1000,
         speed: 100,
@@ -172,7 +172,6 @@ export default {
 
 
 // ------
-
 
 var SuperPlaceholder = function (options) {
   this.options = options;
@@ -364,6 +363,8 @@ var SuperPlaceholder = function (options) {
 
 .search {
   width: 700px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 15px;
   border: none;
   background: #fff;
   border-radius: 30px;
