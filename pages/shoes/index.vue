@@ -9,7 +9,5 @@
 </script>
 
 <style scoped>
-h1{
-    margin: 100px 0px;
-}
+
 </style>
