@@ -125,12 +125,18 @@
         </div>
 
         <div class="nav-content">
-          <nuxt-link to="/">
+          <!-- <nuxt-link to="/"> -->
             <div class="logo">
-              <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="" />
-              <img class="bpshopsIcon" src="img/bpp_icon.png" alt="" />
+              <nuxt-link to="/">
+                <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="" />
+              </nuxt-link>
+              <nuxt-link to="/">
+                <img class="bpshopsIcon" src="img/bpp_icon.png" alt="" />
+              </nuxt-link>
+              <!-- <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="" />
+              <img class="bpshopsIcon" src="img/bpp_icon.png" alt="" /> -->
             </div>
-          </nuxt-link>
+          <!-- </nuxt-link> -->
           <div class="searchInput">
             <input
               type="text"
