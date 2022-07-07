@@ -1,5 +1,9 @@
 <template>
+   
+   <div>
+    <Category-nav categoryName="Furniture" />
     <h1>This is furniture page</h1>
+  </div>
 </template>
 
 <script>

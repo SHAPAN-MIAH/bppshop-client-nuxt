@@ -1,7 +1,7 @@
 <template>
 <div>
     <Nav/>
-    <CategorySlider/>
+    <CategorySlider />
     <nuxt />
     <FooterComp/>
 </div>

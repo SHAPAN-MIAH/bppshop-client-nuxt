@@ -13,6 +13,7 @@
 <script>
 import InfiniteSlideBar from 'vue-infinite-slide-bar'
 export default {
+    
     components: {
         InfiniteSlideBar
     },
