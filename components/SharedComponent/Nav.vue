@@ -158,18 +158,21 @@ export default {
   mounted() {
     window.onload = function () {
       var sp = new SuperPlaceholder({
-        placeholders: ["By Product Name.....", "By Product Category.....","By Brand Name.....","By Product Code....."],
+        placeholders: [
+          "By Product Name.....",
+          "By Product Category.....",
+          "By Brand Name.....",
+          "By Product Code.....",
+        ],
         preText: "Search",
         stay: 1000,
         speed: 100,
         element: "#dynamic-placeholder",
       });
       sp.init();
-      console.log(sp);
     };
   },
 };
-
 
 // ------
 
@@ -236,8 +239,6 @@ var SuperPlaceholder = function (options) {
     clearInterval(this.intervalId);
   };
 };
-
-
 </script>
 
 <style scoped>
