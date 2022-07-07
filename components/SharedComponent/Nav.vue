@@ -157,8 +157,8 @@
 export default {
   mounted() {
     window.onload = function () {
-      var sp = new SuperPlaceholder({
-        placeholders: ["By Product Name.....", "By Product Category.....","By Brand Name.....","By Product Code....."],
+      const sp = new SuperPlaceholder({
+        placeholders: ["By Product Name...", "By Product Category...","By Brand Name...","By Product Code..."],
         preText: "Search",
         stay: 1000,
         speed: 100,
@@ -173,7 +173,7 @@ export default {
 
 // ------
 
-var SuperPlaceholder = function (options) {
+const SuperPlaceholder = function (options) {
   this.options = options;
   this.element = options.element;
   this.placeholderIdx = 0;
@@ -181,7 +181,7 @@ var SuperPlaceholder = function (options) {
 
   this.setPlaceholder = function () {
     let placeholder = options.placeholders[this.placeholderIdx];
-    var placeholderChunk = placeholder.substring(0, this.charIdx + 1);
+    let placeholderChunk = placeholder.substring(0, this.charIdx + 1);
     document
       .querySelector(this.element)
       .setAttribute(
@@ -217,7 +217,7 @@ var SuperPlaceholder = function (options) {
   };
 
   this.onTick = function () {
-    var placeholder = options.placeholders[this.placeholderIdx];
+    let placeholder = options.placeholders[this.placeholderIdx];
     if (this.charIdx === placeholder.length) {
       // end of a placeholder sentence reached
       setTimeout(this.goReverse.bind(this), this.options.stay);

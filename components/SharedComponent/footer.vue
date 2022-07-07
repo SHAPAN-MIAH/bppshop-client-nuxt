@@ -87,13 +87,13 @@ export default {
 
     .footer-social-container {
         display: flex;
-        margin-top: 10px !important;
+        margin-top: 0px !important;
         margin: auto;
         margin-left: 0;
     }
 
     .fa-whatsapp {
-        margin-right: 50px;
+        margin-right: 20px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -105,16 +105,16 @@ export default {
 
     .footer-social-container {
         display: flex;
-        margin-top: 20px !important;
+        margin-top: 0px !important;
         margin: auto;
     }
 
     .IT-Partner {
-        margin: 20px;
+        margin: 0px;
     }
 
     .fa-whatsapp {
-        margin-right: 40px;
+        margin-right: 20px;
     }
 }
 
@@ -127,16 +127,16 @@ export default {
 
     .footer-social-container {
         display: flex;
-        margin-top: 20px !important;
+        margin-top: 0px !important;
         margin: auto;
     }
 
     .IT-Partner {
-        margin: 20px;
+        margin: 0px;
     }
 
     .fa-whatsapp {
-        margin-right: 30px;
+        margin-right: 10px;
     }
 }
 </style>
