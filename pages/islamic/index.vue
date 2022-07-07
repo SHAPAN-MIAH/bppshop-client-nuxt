@@ -1,7 +1,24 @@
 <template>
   <div>
     <Category-nav categoryName="Islamic" />
-    <h1>This is islamic page</h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic </h1>
+    <h1>This is islamic</h1>
   </div>
 </template>
 

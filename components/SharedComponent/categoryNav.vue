@@ -24,6 +24,8 @@ export default {
     text-align: center;
     font-family: "Rajdhani", sans-serif;
     color: #fff;
+    position: fixed;
+    margin-top: 155px;
 }
 .islamic-header h2{
     font-weight: 500;
