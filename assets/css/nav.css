@@ -125,11 +125,11 @@
   .search {
     width: 700px;
     font-family: "Rajdhani", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     border: none;
     background: #fff;
     border-radius: 30px;
-    padding: 16px 25px;
+    padding: 14px 30px;
     margin-left: -200px;
     z-index: 100;
     outline: none;
@@ -177,7 +177,7 @@
   @media only screen and (max-width: 1200px) {
     .search {
       width: 500px;
-      padding: 16px 20px;
+      /* padding: 14px 20px; */
       margin-left: -180px;
     }
   }
@@ -185,7 +185,7 @@
   @media only screen and (max-width: 1100px) {
     .search {
       width: 450px;
-      padding: 15px 20px;
+      /* padding: 13px 20px; */
       margin-left: -180px;
     }
   }
@@ -193,7 +193,7 @@
   @media only screen and (max-width: 1000px) {
     .search {
       width: 400px;
-      padding: 15px 20px;
+      /* padding: 15px 20px; */
       margin-left: -160px;
     }
   }
@@ -201,7 +201,7 @@
   @media only screen and (max-width: 900px) {
     .search {
       width: 370px;
-      padding: 14px 20px;
+      /* padding: 14px 20px; */
       margin-left: -130px;
     }
     .bpshopsLogo {
@@ -213,7 +213,7 @@
   @media only screen and (max-width: 892px) {
     .search {
       width: 350px;
-      padding: 14px 20px;
+      /* padding: 14px 20px; */
       margin-left: -100px;
     }
 
@@ -226,7 +226,7 @@
   @media only screen and (max-width: 800px) {
     .search {
       width: 320px;
-      padding: 14px 20px;
+      /* padding: 14px 20px; */
       margin-left: -60px;
     }
     .bpshopsLogo {
@@ -238,8 +238,9 @@
   @media only screen and (max-width: 768px) {
     .search {
       width: 300px;
-      padding: 14px 20px;
+      /* padding: 14px 20px; */
       margin-left: -30px;
+      
     }
     .sidebarIconToggle {
       top: 32px;
@@ -269,6 +270,7 @@
       width: 270px;
       padding: 14px 20px;
       margin-left: -20px;
+      font-size: 16px;
     }
     .sidebarIconToggle {
       top: 32px;
@@ -295,8 +297,9 @@
   @media only screen and (max-width: 576px) {
     .search {
       width: 250px;
-      padding: 14px 15px;
+      padding: 14px 20px;
       margin-left: -10px;
+      font-size: 15px;
     }
 
     .sidebarIconToggle {

@@ -1,24 +1,18 @@
-
 <template>
-<div class="islamic-container">
-    <div class="islamic-header">
-        <h2>{{categoryName}}</h2>
-    </div>
-    
-   
+<div class="category-nav">
+    <h2>{{categoryName}}</h2>
 </div>
 </template>
 
-
 <script>
 export default {
-    name:'categoryNav',
-    props:['categoryName']
+    name: 'categoryNav',
+    props: ['categoryName']
 }
 </script>
 
 <style scoped>
-.islamic-header{
+.category-nav {
     width: 100%;
     background: #EF8341;
     text-align: center;
@@ -26,9 +20,10 @@ export default {
     color: #fff;
     position: fixed;
     margin-top: 155px;
-}
-.islamic-header h2{
-    font-weight: 500;
     padding: 5px 0px;
+}
+
+.category-nav h2 {
+    font-weight: 500;
 }
 </style>

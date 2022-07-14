@@ -1,9 +1,10 @@
 <template>
 <div>
-    <Nav/>
+    <Nav />
     <CategorySlider />
+    <CategoryNav/>
     <nuxt />
-    <FooterComp/>
+    <FooterComp />
 </div>
 </template>
 
@@ -11,12 +12,14 @@
 import Nav from '@/components/SharedComponent/Nav.vue'
 import FooterComp from '@/components/SharedComponent/footer.vue'
 import CategorySlider from '~/components/SharedComponent/categorySlider.vue'
+import CategoryNav from '~/components/SharedComponent/categoryNav.vue'
 
 export default {
     components: {
     Nav,
     FooterComp,
-    CategorySlider
+    CategorySlider,
+    CategoryNav
 }
 }
 </script>

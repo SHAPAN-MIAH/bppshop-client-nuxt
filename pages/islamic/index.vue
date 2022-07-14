@@ -1,24 +1,9 @@
 <template>
   <div>
-    <Category-nav categoryName="Islamic" />
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic </h1>
-    <h1>This is islamic</h1>
+   <div class="category-navbar">
+      <Category-nav categoryName="Islamic" />
+    </div>
+    
   </div>
 </template>
 
@@ -27,4 +12,8 @@ export default {
   layout: "categoryLayout",
 };
 </script>
+
+<style scoped>
+
+</style>
 
