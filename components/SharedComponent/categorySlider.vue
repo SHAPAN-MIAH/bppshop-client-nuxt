@@ -103,6 +103,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 30px;
     padding: 5px 30px;
+    
     /* justify-content: space-around; */
 }
 .categorySliderCart img{

@@ -7,14 +7,23 @@
         <div v-for="product in products" :key="product.id">
 
             <div class="product-card">
-                <div>
-                  <img :src="product.image" alt="">
-                <p>{{product.title}}</p>
+                <div class="img-container">
+                    <img :src="product.image" alt="">
+                    <div class="quickView">
+                        <span><i class="bi bi-eye"></i></span>
+                        <span><i class="bi bi-heart"></i></span>
+                        <span><i class="bi bi-bag-plus"></i></span>
+                    </div>
                 </div>
-
-                <div class="quickView">
-                  <span>Quick View</span>
-                </div>
+                <p>{{product.title.toString().substring(0, 25)}}....</p>
+                <p>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </p>
+                <p class="price">৳ {{product.price}}</p>
             </div>
         </div>
     </div>
@@ -38,54 +47,72 @@ export default {
         this.products = result.data
     },
 };
-
-//  const view = ()=>{
-//   const quickView = document.querySelector('.quickView');
-//   quickView.style.display = 'block'
-//  }
-
 </script>
 
 <style scoped>
 .product-content {
     width: 70%;
     margin: auto;
-    padding-top: 250px;
+    padding-top: 230px;
     padding-bottom: 50px;
     font-family: "Rajdhani", sans-serif;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
+    grid-gap: 50px 30px;
 }
 
 .product-card {
-    height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 330px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     align-items: center;
     text-align: center;
-    border-radius: 5px;
-    transition: all .5s;
-    /* background: #f8f8f8; */
+    border-radius: 4px;
+    transition: all .100ms;
+    overflow: hidden;
+}
+.product-card p {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.price{
+  color: #EF8341;
 }
 .product-card:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.product-card img{
-   margin: 20px;
-   height: 140px;
-   width: 110px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    
 }
 
-.quickView{
-  opacity: 0;
-  transition: all 1s;
-  background: #f1f1f1;
-  padding: 15px 0px;
+.img-container{
+  overflow: hidden;
+  background: #f5f5f5f5;
+}
+.product-card img {
+    margin-top: 20px;
+    height: 150px;
+    width: 110px;
+    overflow: hidden;
 }
 
-.product-card:hover .quickView{
-   opacity: 1;
-   bottom: 100;
+.quickView {
+    opacity: 0;
+    padding: 15px 0px;
+    transform: translateY(50px);
+    transition: transform 350ms ease-in-out;
+}
+.quickView span{
+    font-size: 20px;
+    margin: 0px 15px;
+    color: gray;
+    cursor: pointer;
+}
+.quickView span:hover{
+    color: #EF8341;
+}
+
+.product-card:hover .quickView {
+    opacity: 1;
+    transform: translateY(0);
 }
 </style>
-
