@@ -2,7 +2,7 @@
 <div class="footer-container">
     <div class="footer-content-container">
         <div class="ft-section1">
-            <img width="" src="img/bppshops-logo.png" alt="" />
+            <img width="" src="img/bppshops-logo.png" alt="">
 
             <ul class="social-icons">
                 <li class="fb-icons">

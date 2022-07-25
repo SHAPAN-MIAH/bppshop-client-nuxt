@@ -1,5 +1,5 @@
 <template>
-<infinite-slide-bar duration="50s" delay="1s" :barStyle="{ background: '#ee9c69', padding: '5px 0', marginTop: '80px', position: 'fixed' }">
+<infinite-slide-bar duration="50s" delay="1s" :barStyle="{ background: '#ee9c69', padding: '5px 0', marginTop: '79px', position: 'fixed' }">
     <span class="categorySliderCart" v-for="item in category" :key="item.id">
         <nuxt-link :to="'/'+item.route">
             <img :src="item.imgIcon" alt="" />

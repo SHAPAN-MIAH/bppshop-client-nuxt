@@ -1,7 +1,9 @@
 <template>
+<!-- <no-ssr> -->
   <div class="div">
     <Home />
   </div>
+  <!-- </no-ssr> -->
 </template>
 
 <script>

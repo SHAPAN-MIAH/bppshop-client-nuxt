@@ -83,6 +83,12 @@
                     <input type="text" name="" id="dynamic-placeholder" class="search" placeholder="Search by Product Category" />
                     <span class="searchIcon"><i class="bi bi-search"></i></span>
                 </div>
+                <div class="cart">
+                    <i class="bi bi-cart">{{cartItemCount}}</i>
+
+                    
+                </div>
+                
                 <div class="login">
                     <h6>Login</h6>
                     <span class="threeDotMenuIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
@@ -101,6 +107,11 @@
 
 <script>
 export default {
+    computed:{
+    cartItemCount(){
+        return this.$store.getters.cartItemCount;
+    }
+    },
     mounted() {
         window.onload = function () {
             const sp = new SuperPlaceholder({
@@ -186,5 +197,6 @@ const SuperPlaceholder = function (options) {
     };
 };
 </script>
-
+<!-- <style scoped src="@/node_modules/bootstrap/dist/css/bootstrap.css"></style>
+<style scoped src="@/node_modules/bootstrap-vue/dist/bootstrap-vue.css"></style> -->
 <style src="~/assets/css/nav.css" scoped></style>

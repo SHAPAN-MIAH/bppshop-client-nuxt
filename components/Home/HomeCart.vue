@@ -4,7 +4,7 @@
       <li class="cart" v-for="item in category" :key="item.id">
         <nuxt-link :to="'/' + item.route">
           <p v-if="item.status == 'Upcoming'">{{ item.status }}</p>
-          <img :src="item.img" alt="" />
+          <img :src="item.img" alt="">
           <h3>{{ item.name }}</h3>
         </nuxt-link>
       </li>

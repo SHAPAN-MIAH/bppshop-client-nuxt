@@ -104,6 +104,14 @@
     /* align-items: center; */
     /* margin-top: 15px; */
   }
+
+  .cart{
+    margin: 0px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+
+  }
   
   .bpshopsLogo {
     width: 13em;
@@ -324,4 +332,6 @@
     .threeDotMenuIcon {
       display: block;
     }
+
+    
   }

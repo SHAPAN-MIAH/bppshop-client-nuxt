@@ -3,7 +3,6 @@
    <div class="category-navbar">
       <Category-nav categoryName="Islamic" />
     </div>
-    
   </div>
 </template>
 
