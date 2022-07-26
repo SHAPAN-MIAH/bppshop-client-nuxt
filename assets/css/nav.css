@@ -106,13 +106,14 @@
   }
 
   .cart{
-    margin: 0px 20px;
     cursor: pointer;
     color: #fff;
     font-weight: 600;
-
   }
   
+  .cartDropdown{
+    display: none;
+  }
   .bpshopsLogo {
     width: 13em;
     cursor: pointer;
@@ -139,7 +140,7 @@
     background: #fff;
     border-radius: 30px;
     padding: 14px 30px;
-    margin-left: -200px;
+    margin-left: -140px;
     z-index: 100;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;

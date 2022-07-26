@@ -20,6 +20,13 @@ export default {
       referrerpolicy:"no-referrer"},
 
     ],
+
+    script: [
+      {
+        src: 'js/bootstrap.bundle.min.js',
+        type: 'text/javascript'
+      }
+    ]
  
   },
 
@@ -32,6 +39,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/global_components.js',
+    // '~/plugins/bootstrap.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

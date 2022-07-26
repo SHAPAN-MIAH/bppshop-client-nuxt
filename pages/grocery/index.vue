@@ -4,17 +4,13 @@
         <Category-nav categoryName="Grocery" />
     </div>
     <div class="main-container">
-        <Sidebar/>
+        <Sidebar />
         <div class="product-content">
-                <ProductsDisplay v-for="product in products" 
-                :key="product.id"
-                :product="product"
-                />
+            <ProductsDisplay v-for="product in products" :key="product.id" :product="product" />
         </div>
     </div>
 </div>
 </template>
-
 
 <script>
 import ProductsDisplay from '~/components/ProductsCollection/ProductsDisplay.vue';
@@ -22,8 +18,11 @@ import Sidebar from '~/components/SharedComponent/sidebar.vue';
 
 export default {
     layout: "categoryLayout",
-    components: { ProductsDisplay, Sidebar },
-    
+    components: {
+        ProductsDisplay,
+        Sidebar
+    },
+
     mounted() {
         this.$store.dispatch("getProducts");
     },
@@ -32,11 +31,9 @@ export default {
             return this.$store.state.products;
         }
     },
-    
+
 };
 </script>
-
-
 
 <style scoped>
 .main-container {
@@ -47,6 +44,7 @@ export default {
     font-family: "Rajdhani", sans-serif;
     color: gray;
 }
+
 .product-content {
     width: 79%;
     margin-left: auto;
@@ -54,7 +52,6 @@ export default {
     font-family: "Rajdhani", sans-serif;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap:30px;
+    grid-gap: 30px;
 }
-
 </style>

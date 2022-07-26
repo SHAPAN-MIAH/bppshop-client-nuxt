@@ -75,18 +75,15 @@
                     <nuxt-link to="/">
                         <img class="bpshopsIcon" src="img/bpp_icon.png" alt="" />
                     </nuxt-link>
-                    <!-- <img class="bpshopsLogo" src="img/bppshops-logo.png" alt="" />
-              <img class="bpshopsIcon" src="img/bpp_icon.png" alt="" /> -->
                 </div>
                 <!-- </nuxt-link> -->
                 <div class="searchInput">
                     <input type="text" name="" id="dynamic-placeholder" class="search" placeholder="Search by Product Category" />
                     <span class="searchIcon"><i class="bi bi-search"></i></span>
                 </div>
-                <div class="cart">
-                    <i class="bi bi-cart">{{cartItemCount}}</i>
 
-                    
+                <div class="cart">
+                    <CartView/>
                 </div>
                 
                 <div class="login">
@@ -106,12 +103,9 @@
 </template>
 
 <script>
+import CartView from "./cartView.vue";
 export default {
-    computed:{
-    cartItemCount(){
-        return this.$store.getters.cartItemCount;
-    }
-    },
+    
     mounted() {
         window.onload = function () {
             const sp = new SuperPlaceholder({
@@ -129,6 +123,7 @@ export default {
             sp.init();
         };
     },
+    components: { CartView }
 };
 
 // ------
@@ -195,6 +190,7 @@ const SuperPlaceholder = function (options) {
     this.kill = function () {
         clearInterval(this.intervalId);
     };
+    
 };
 </script>
 <!-- <style scoped src="@/node_modules/bootstrap/dist/css/bootstrap.css"></style>

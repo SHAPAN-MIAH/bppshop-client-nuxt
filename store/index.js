@@ -71,6 +71,7 @@ export const mutations = {
       productInCart.quantity += quantity;
       return;
     }
+    localStorage.setItem(state, {product, quantity})
     state.cart.push(
       {
         product, 
