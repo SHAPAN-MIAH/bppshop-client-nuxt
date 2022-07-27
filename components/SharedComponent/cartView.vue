@@ -1,71 +1,107 @@
 <template>
 <div>
-    <!-- <div @click="togglecart()" class="cart">
-        <i class="bi bi-cart"></i>
-        <span>{{cartItemCount}}</span>
-    </div> -->
-
-    <div>
-        <div class="dropdown">
-            <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="cart">
-                    <i class="bi bi-cart"></i>
-                    <span>{{cartItemCount}}</span>
+    <div class="dropdown">
+        <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+                <span>{{cartItemCount}}</span>
+            </div>
+        </div>
+        <div @click="$event.stopPropagation()" class="dropdown-menu cart-content">
+            <div class="cart-header">
+                <div>
+                    <strong>My Cart : </strong>
+                    <br>
+                    <small v-if="cart.length"> You have {{cartItemCount}} items in your cart</small>
+                </div>
+                <div v-if="cart.length">
+                    <a @click.prevent="clearCart()" class="clear-cart">
+                        <span class="trashIcon"><i class="bi bi-trash3"></i></span>
+                        Clear Cart
+                    </a>
                 </div>
             </div>
-            <div class="dropdown-menu cart-content">
-                <div v-for="item in cart" :key="item.product.id" class="d-flex justify-content-between">
+            <hr>
+            <div v-if="cart.length">
+                <div v-for="item in cart" :key="item.product.id" class="d-flex justify-content-between item-content">
+                    <!-- <nuxt-link :to="`/grocery/${product.id}`"> -->
                     <div class="item">
-                       <strong class="product-title">{{item.product.title.toString().substring(0, 25)}}...</strong>
-                       <br>
-                       {{item.quantity}} x $ {{item.product.price}}
+                        <img width="20" :src="item.product.image" alt="">
+                        <strong class="product-title">{{item.product.title.toString().substring(0, 25)}}...</strong>
+                        <br>
+                        <small>{{item.quantity}} x $ {{item.product.price}}</small>
                     </div>
+                    <!-- </nuxt-link> -->
+
                     <div class="removeItem">
-                        <i class="bi bi-trash3"></i>
+                        <span @click.prevent="removeProductFromCart(item.product)"><i class="bi bi-trash3"></i></span>
                     </div>
                 </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                    <strong>Total: $ {{cartTotalPrice}}</strong>
-                    <a class="clear-cart" href="">Clear Cart</a>
-                </div>
+            </div>
+            <div v-else class="haveNoProductAlert">
+                <strong>You have no product yet!</strong>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <strong>Total: ৳ {{cartTotalPrice}}</strong>
+                <a class="checkoutBtn"> Checkout</a>
             </div>
         </div>
     </div>
-
-    <!-- <div class="cartDropdown">
-        <h1>hello</h1>
-    </div> -->
 </div>
 </template>
 
 <script>
 export default {
+    // props: ['product'],
     computed: {
-        cart(){
+        cart() {
             return this.$store.state.cart;
         },
         cartItemCount() {
             return this.$store.getters.cartItemCount;
         },
-        cartTotalPrice(){
+        cartTotalPrice() {
             return this.$store.getters.cartTotalPrice
-        }
+        },
+
     },
     methods: {
-        togglecart() {
-            alert('hello')
+        removeProductFromCart(product) {
+            this.$store.dispatch("removeProductFromCart", product)
 
+        },
+        clearCart() {
+            this.$store.dispatch('clearCart')
         }
     }
 }
 </script>
 
 <style scoped>
-.clear-cart{
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.clear-cart {
     text-decoration: none;
     color: #ef8341;
+    cursor: pointer;
 }
+
+.clear-cart:hover,
+.clear-cart:hover .trashIcon i {
+    text-decoration: none;
+    color: #f51616;
+}
+
+.trashIcon i {
+    font-size: 15px !important;
+    margin-right: -20px !important;
+}
+
 .cart i {
     font-size: 35px;
     margin-right: 25px;
@@ -81,20 +117,55 @@ export default {
     border-radius: 50px;
     text-align: center;
 }
-.cart-content{
+
+.cart-content {
     display: flex;
-    margin-left: -305px !important;
-    width: 350px;
-    padding: 20px !important;
+    margin-left: -405px !important;
+    width: 450px;
+    padding: 20px 30px !important;
     color: rgb(80, 80, 80) !important;
 
 }
-.product-title{
+
+.item-content {
+    margin-bottom: 15px;
+}
+
+.item img{
+    margin-right: 10px;
+}
+.item small {
+    margin-left: 35px;
+}
+
+.product-title {
     font-weight: 600;
 }
-.removeItem i{
+
+.removeItem i {
     font-size: 18px;
     color: #ef8341;
+}
+
+.removeItem i:hover {
+    color: #f51616;
+}
+
+.haveNoProductAlert {
+    text-align: center !important;
+}
+
+.checkoutBtn{
+    background: #f1f1f1;
+    padding: 10px 30px;
+    color: #ef8341;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.checkoutBtn:hover{
+    color: #ef8341;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 </style>
 

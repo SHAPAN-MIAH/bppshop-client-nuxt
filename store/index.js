@@ -1,14 +1,14 @@
 import axios from "axios";
 
 
-
+// state........
 export const state = () => ({
   products: [],
   cart: []
 });
 
 
-
+// getters.........
 export const getters = {
   getProductById: (state) => (id) => {
     return state.products.find(product => product.id == id)
@@ -30,7 +30,7 @@ export const getters = {
 };
 
 
-
+// actions................
 export const actions = {
   async getProducts({ commit }) {
     const res = await axios.get("https://fakestoreapi.com/products")
@@ -46,11 +46,19 @@ export const actions = {
 
   addProductToCart({commit}, {product, quantity}){
     commit('ADD_TO_CART', {product, quantity});
+  },
+
+  removeProductFromCart({commit}, product){
+    commit('REMOVE_PRODUCT_FROM_CART', product)
+  },
+
+  clearCart({commit}){
+    commit('CLEAR_CART')
   }
 };
 
 
-
+// mutations................
 export const mutations = {
   SET_PRODUCTS(state, products) {
     state.products = products;
@@ -78,5 +86,16 @@ export const mutations = {
         quantity
       }
     )
+  },
+
+
+  REMOVE_PRODUCT_FROM_CART(state, product){
+    state.cart = state.cart.filter(item => {
+      return item.product.id !== product.id;
+    })
+  },
+
+  CLEAR_CART(state){
+    state.cart = []
   }
 };

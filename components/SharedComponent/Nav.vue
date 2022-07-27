@@ -82,6 +82,7 @@
                     <span class="searchIcon"><i class="bi bi-search"></i></span>
                 </div>
 
+                <!-- <div @click="$event.stopPropagation()" class="cart"> -->
                 <div class="cart">
                     <CartView/>
                 </div>
