@@ -29,7 +29,7 @@
                         <img width="20" :src="item.product.image" alt="">
                         <strong class="product-title">{{item.product.title.toString().substring(0, 25)}}...</strong>
                         <br>
-                        <small>{{item.quantity}} x $ {{item.product.price}}</small>
+                        <small>{{item.quantity}} x ৳ {{item.product.price}}</small>
                     </div>
                     <!-- </nuxt-link> -->
 
@@ -110,7 +110,7 @@ export default {
 
 .cart span {
     position: absolute;
-    margin-left: -35px;
+    margin-left: -38px;
     background: #fff;
     color: #ef8341;
     width: 22px;
@@ -136,12 +136,16 @@ export default {
 }
 .item small {
     margin-left: 35px;
+    font-size: 15px;
 }
 
 .product-title {
     font-weight: 600;
 }
 
+/* .removeItem span {
+    
+} */
 .removeItem i {
     font-size: 18px;
     color: #ef8341;

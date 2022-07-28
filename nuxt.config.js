@@ -39,6 +39,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/global_components.js',
+    { src: "~/plugins/vue-product-zoomer.js", ssr: false },
     // { src: '~/plugins/vuex-persist', ssr: false }
   ],
 
