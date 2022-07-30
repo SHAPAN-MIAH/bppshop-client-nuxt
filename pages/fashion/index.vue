@@ -1,30 +1,58 @@
 <template>
-<div>
+<div class="container">
     <div class="category-navbar">
-       <Category-nav categoryName="Fashion" />
+        <Category-nav categoryName="Fashion" />
+    </div>
+    <div class="main-container">
+        <Sidebar />
+        <div class="product-content">
+            <FashionProductDisplay v-for="product in products" :key="product.id" :product="product" />
+        </div>
     </div>
 </div>
 </template>
 
 <script>
+import Sidebar from '~/components/SharedComponent/sidebar.vue';
+import FashionProductDisplay from '~/components/ProductsCollection/FashionProductDisplay.vue';
+
 export default {
     layout: "categoryLayout",
+    components: {
+    Sidebar,
+    FashionProductDisplay
+},
+
+    mounted() {
+        this.$store.dispatch("getProducts");
+    },
+    computed: {
+        products() {
+            return this.$store.state.products;
+        }
+    },
+
 };
 </script>
 
 <style scoped>
-.category-nav {
-    width: 100%;
-    background: #EF8341;
-    text-align: center;
+.main-container {
+    display: flex;
+    width: 93%;
+    margin: auto;
+    padding-top: 230px;
     font-family: "Rajdhani", sans-serif;
-    color: #fff;
-    position: fixed;
-    margin-top: 155px;
+    color: gray;
 }
 
-.category-nav h2 {
-    font-weight: 500;
-    padding: 5px 0px;
+.product-content {
+    width: 79%;
+    margin-left: auto;
+    padding-bottom: 50px;
+    font-family: "Rajdhani", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
 }
 </style>
+
