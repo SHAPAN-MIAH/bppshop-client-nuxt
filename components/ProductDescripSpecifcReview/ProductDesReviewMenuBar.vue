@@ -11,6 +11,7 @@
         </li>
         <li>
             Review
+            <span class="review-count">2</span>
         </li>
     </ul>
 </template>
@@ -39,5 +40,12 @@ ul li{
 ul li:hover{
     color: #EF8341;
     background: rgb(224, 224, 224);
+}
+.review-count{
+    background: #EF8341;
+    border-radius: 50px;
+    padding: 0px 6px;
+    color: #f1f1f1;
+    font-size: 14px;
 }
 </style>

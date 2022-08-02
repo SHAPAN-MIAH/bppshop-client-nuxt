@@ -19,7 +19,7 @@ export default {
     font-family: "Rajdhani", sans-serif;
     color: #fff;
     position: fixed;
-    margin-top: 154px;
+    margin-top: 150px;
     padding: 5px 0px;
 }
 

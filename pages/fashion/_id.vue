@@ -41,6 +41,8 @@
         <ProductDesReviewMenuBar/>
         <ProductDescription/>
         <ProductSpecification/>
+        <ProductSellerDetails/>
+        <ProductReview/>
     </div>
     <div v-else>
         <h1>product not found</h1>
@@ -55,6 +57,8 @@ import Sidebar from '~/components/SharedComponent/sidebar.vue';
 import ProductDescription from '~/components/ProductDescripSpecifcReview/ProductDescription.vue';
 import ProductSpecification from '~/components/ProductDescripSpecifcReview/ProductSpecification.vue';
 import ProductDesReviewMenuBar from '~/components/ProductDescripSpecifcReview/ProductDesReviewMenuBar.vue';
+import ProductSellerDetails from '~/components/ProductDescripSpecifcReview/ProductSellerDetails.vue';
+import ProductReview from '../../components/ProductDescripSpecifcReview/ProductReview.vue';
 
 export default {
     layout: "categoryLayout",
@@ -62,7 +66,9 @@ export default {
     Sidebar,
     ProductDescription,
     ProductSpecification,
-    ProductDesReviewMenuBar
+    ProductDesReviewMenuBar,
+    ProductSellerDetails,
+    ProductReview
 },
     data() {
         return {
