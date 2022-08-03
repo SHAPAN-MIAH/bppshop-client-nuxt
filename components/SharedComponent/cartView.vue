@@ -90,6 +90,11 @@ export default {
     color: #ef8341;
     cursor: pointer;
 }
+.clear-cart .trashIcon i{
+    color: #ef8341;
+    font-size: 23px;
+    margin-right: -30px !important;
+}
 
 .clear-cart:hover,
 .clear-cart:hover .trashIcon i {
@@ -97,30 +102,28 @@ export default {
     color: #f51616;
 }
 
-.trashIcon i {
-    font-size: 15px !important;
-    margin-right: -20px !important;
-}
-
 .cart i {
-    font-size: 35px;
-    margin-right: 25px;
+    font-size: 28px;
+    margin-right: 30px;
     position: relative;
+    color: rgb(230, 230, 230);
 }
 
 .cart span {
     position: absolute;
-    margin-left: -38px;
+    margin-left: -40px;
     background: #fff;
     color: #ef8341;
-    width: 22px;
     border-radius: 50px;
     text-align: center;
+    font-size: 14px;
+    padding: 0px 6px;
+    margin-top: -4px;
 }
 
 .cart-content {
     display: flex;
-    margin-left: -405px !important;
+    margin-left: -410px !important;
     width: 450px;
     padding: 20px 30px !important;
     color: rgb(80, 80, 80) !important;

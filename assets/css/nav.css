@@ -140,7 +140,7 @@
     background: #fff;
     border-radius: 30px;
     padding: 14px 30px;
-    margin-left: -153px;
+    margin-left: -100px;
     z-index: 100;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -158,11 +158,13 @@
     margin-right: 67px;
     color: #fff;
     font-size: 25px;
-    padding: 11px 0px;
+    /* padding: 11px 0px; */
   }
-  
-  .login h6 {
+ 
+  .login i{
+    font-size: 32px;
     cursor: pointer;
+    color: rgb(230, 230, 230);
   }
   
   .threeDotMenuIcon {
@@ -171,6 +173,38 @@
     cursor: pointer;
   }
   
+  .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(129, 129, 129);
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -110px;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: default;
+    border-radius: 5px;
+}
+.tooltiptext li{
+  list-style: none;
+  font-style: normal;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
   /* responsive css */
   @media only screen and (max-width: 1400px) {
     .sidebarIconToggle {

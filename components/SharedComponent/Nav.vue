@@ -84,12 +84,20 @@
 
                 <!-- <div @click="$event.stopPropagation()" class="cart"> -->
                 <div class="cart">
+                    <WishList/>
+                </div>
+                <div class="cart">
                     <CartView/>
                 </div>
                 
                 <div class="login">
-                    <h6>Login</h6>
-                    <span class="threeDotMenuIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    <i class="bi bi-person tooltip">
+                        <ul class="tooltiptext">
+                            <li>Login</li>
+                            <li>Register</li>
+                        </ul>
+                    </i>
+                    <!-- <span class="threeDotMenuIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span> -->
                 </div>
                 <!-- <modal name="my-modal">
                     <div class="modal-content">
@@ -105,6 +113,7 @@
 
 <script>
 import CartView from "./cartView.vue";
+import WishList from "./wishList.vue";
 export default {
     
     mounted() {
@@ -124,7 +133,7 @@ export default {
             sp.init();
         };
     },
-    components: { CartView }
+    components: { CartView, WishList }
 };
 
 // ------

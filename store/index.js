@@ -2,17 +2,28 @@ import axios from "axios";
 
 
 // state........
-export const state = () => ({
-  products: [],
-  cart: [],
-});
+// export const state = () => ({
+//   products: [],
+//   cart: [],
+//   wishList: [],
+// });
 
+// export const state =  {
+//     products: [],
+//     cart: [],
+//     wishList: [],
+//   };
 
+export const state =  {
+    products: [],
+    cart: [],
+    wishList: [],
+};
 
 // getters.........
 export const getters = {
   getProductById: (state) => (id) => {
-    return state.products.find((product) => product.id == id)
+    return state.products.find((product) => product.id == id);
   },
 
   cartItemCount: (state) => {
@@ -22,7 +33,7 @@ export const getters = {
       quantityCount += item.quantity;
     });
 
-    return quantityCount ;
+    return quantityCount;
   },
 
   cartTotalPrice: (state) => {
@@ -34,9 +45,17 @@ export const getters = {
 
     return total;
   },
+
+  wishListItemCount: (state) => {
+    let wishListQuantityCount = 0;
+
+    state.wishList.forEach((item) => {
+      wishListQuantityCount += item.quantity;
+    });
+
+    return wishListQuantityCount;
+  },
 };
-
-
 
 // actions................
 export const actions = {
@@ -63,9 +82,19 @@ export const actions = {
   clearCart({ commit }) {
     commit("CLEAR_CART");
   },
+
+  addProductToWishList({ commit }, { product, quantity }) {
+    commit("ADD_TO_WISHLIST", { product, quantity });
+  },
+
+  removeProductFromWishList({commit}, product){
+    commit("REMOVE_FROM_WISHLIST", product)
+  },
+
+  clearWishList({commit}) {
+    commit("CLEAR_WISHLIST");
+  }
 };
-
-
 
 // mutations................
 export const mutations = {
@@ -103,4 +132,19 @@ export const mutations = {
   CLEAR_CART(state) {
     state.cart = [];
   },
+
+  ADD_TO_WISHLIST(state, { product, quantity }) {
+    state.wishList.push({ product, quantity });
+  },
+
+  REMOVE_FROM_WISHLIST(state, product){
+    state.wishList = state.wishList.filter((item) => item.product.id !==product.id
+    )
+  },
+
+  CLEAR_WISHLIST(state) {
+    state.wishList = [];
+  },
+
+
 };
