@@ -27,6 +27,7 @@ export default {
     font-family: "Rajdhani", sans-serif;
     width: 75%;
     margin: auto;
+    padding: 30px 0px;
 }
 .specification-table{
     margin-top: 30px;

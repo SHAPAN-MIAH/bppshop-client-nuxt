@@ -8,7 +8,6 @@
             <div class="product-content">
                 <div class="img-container">
                     <img :src='product.image' alt="">
-                    <!-- <ProductZoomer :base-images="images" :base-zoomer-options="zoomerOptions" /> -->
                 </div>
                 <div class="product-details-content">
                     <h2>{{product.title}}</h2>
@@ -30,102 +29,37 @@
                         <button @click="addToCart()" id="addToCartBtn"><i class="bi bi-bag-plus"></i> Add To Cart</button>
                     </div>
                     <div>
-                        <button class="addWishListBtn"><i class="bi bi-heart"></i> Add to Wishlist</button>
-                        <button class="continueShoppingBtn"><i class="bi bi-cart3"></i> Continue Shopping</button>
+                        <button @click="addToWishList()" class="addWishListBtn"><i class="bi bi-heart"></i> Add to Wishlist</button>
+                        <nuxt-link to="/fashion">
+                            <button class="continueShoppingBtn"><i class="bi bi-cart3"></i> Continue Shopping</button>
+                        </nuxt-link>
                     </div>
                     <p class="dec">{{product.description}}</p>
                 </div>
             </div>
-            
+
         </div>
-        <ProductDesReviewMenuBar/>
-        <ProductDescription/>
-        <ProductSpecification/>
-        <ProductSellerDetails/>
-        <ProductReview/>
+        <ProductDesReviewMenuBar />
+        <NuxtChild keep-alive />
     </div>
     <div v-else>
         <h1>product not found</h1>
     </div>
 
-    
 </div>
 </template>
 
 <script>
 import Sidebar from '~/components/SharedComponent/sidebar.vue';
-import ProductDescription from '~/components/ProductDescripSpecifcReview/ProductDescription.vue';
-import ProductSpecification from '~/components/ProductDescripSpecifcReview/ProductSpecification.vue';
 import ProductDesReviewMenuBar from '~/components/ProductDescripSpecifcReview/ProductDesReviewMenuBar.vue';
-import ProductSellerDetails from '~/components/ProductDescripSpecifcReview/ProductSellerDetails.vue';
-import ProductReview from '../../components/ProductDescripSpecifcReview/ProductReview.vue';
 
 export default {
     layout: "categoryLayout",
     components: {
-    Sidebar,
-    ProductDescription,
-    ProductSpecification,
-    ProductDesReviewMenuBar,
-    ProductSellerDetails,
-    ProductReview
-},
-    data() {
-        return {
-            images: {
-                thumbs: [{
-                        id: 1,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647642978/h1-r3.jpg",
-                    },
-                    {
-                        id: 2,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647644372/h3-r3.jpg",
-                    },
-                    {
-                        id: 3,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647644758/h4-r3.jpg",
-                    },
-                ],
-                normal_size: [{
-                        id: 1,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647642886/h1-r2.jpg",
-                    },
-                    {
-                        id: 2,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647644372/h3-r2.jpg",
-                    },
-                    {
-                        id: 3,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647644758/h4-r2.jpg",
-                    },
-                ],
-                large_size: [{
-                        id: 1,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647642886/h1-r1.jpg",
-                    },
-                    {
-                        id: 2,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647644372/h3-r1.jpg",
-                    },
-                    {
-                        id: 3,
-                        url: "https://res.cloudinary.com/olanetsoft/image/upload/v1647644758/h4-r1.jpg",
-                    },
-                ],
-            },
-            zoomerOptions: {
-                zoomFactor: 3, // scale for zoomer
-                pane: "pane", // three type of pane ['pane', 'container-round', 'container']
-                hoverDelay: 300, // how long after the zoomer take effects
-                move_by_click: false, // move image by click thumb image or by mouseover
-                scroll_items: 5, // thumbs for scroll
-                choosed_thumb_border_color: "#bbdefb", // choosed thumb border color
-                scroller_button_style: "line",
-                scroller_position: "left",
-                zoomer_pane_position: "right",
-            },
-        }
+        Sidebar,
+        ProductDesReviewMenuBar
     },
+
     computed: {
         product() {
             return this.$store.getters.getProductById(this.$route.params.id);
@@ -137,6 +71,13 @@ export default {
                 product: this.product,
                 quantity: 1
             });
+        },
+
+        addToWishList(){
+            this.$store.dispatch('addProductToWishList', {
+                product: this.product,
+                quantity: 1
+            })
         }
     }
 }
@@ -232,6 +173,7 @@ export default {
     cursor: pointer;
     /* border-radius: 5px; */
 }
+
 #addToCartBtn:hover {
     color: #ef8341;
 }
@@ -260,5 +202,4 @@ export default {
 #addToCartBtn:hover {
     background: gainsboro;
 }
-
 </style>

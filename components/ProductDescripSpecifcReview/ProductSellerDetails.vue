@@ -50,7 +50,7 @@ export default {
     font-family: "Rajdhani", sans-serif;
     width: 75%;
     margin: auto;
-    margin-top: 20px;
+    padding: 20px 0px;
 }
 
 .seller-heading-content {

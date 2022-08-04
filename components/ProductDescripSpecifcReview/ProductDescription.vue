@@ -1,6 +1,5 @@
 <template>
 <div>
-    <!-- <ProductDesReviewMenuBar/> -->
     <div class="description-section">
     <div class="description-heading-text">
         <p>The Model is wearing a white blouse from our stylist's collection, see the image for a mock-up of what the actual blouse would look like.it has text written on it in a black glass is a heady concoction of madness mixed with a hint of wicked along with several bursts of outrageousness and a tingling spiciness of twisted humour bottled up in intriguing grandeur cursive language which looks great on a white color.</p>
@@ -41,9 +40,7 @@
 </template>
 
 <script>
-// import ProductDesReviewMenuBar from './ProductDesReviewMenuBar.vue';
 export default {
-    // components: { ProductDesReviewMenuBar }
 }
 </script>
 
@@ -52,10 +49,11 @@ export default {
     font-family: "Rajdhani", sans-serif;
     width: 75%;
     margin: auto;
+    padding: 20px 0px;
 }
 
 .description-heading-text {
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .comfort-content {
@@ -99,7 +97,6 @@ export default {
 }
 .MaterialDetails li{
     list-style: none;
-    /* margin-left: 20px; */
     padding: 10px 0px;
     font-size: 17px;
 }

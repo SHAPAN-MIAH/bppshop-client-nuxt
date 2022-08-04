@@ -128,6 +128,7 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 10px 0px;
     font-family: "Rajdhani", sans-serif;
     color: #6d6d6d;
 }
@@ -266,7 +267,7 @@
 
 
 .progressbar{
-    width: 500px;
+    width: 400px;
     height: 17px;
     background-color: #e0e0e0; 
     border-radius: 30px;

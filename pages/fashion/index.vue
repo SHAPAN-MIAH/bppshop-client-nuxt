@@ -4,7 +4,7 @@
         <Category-nav categoryName="Fashion" />
     </div>
     <div class="main-container">
-        <Sidebar />
+            <Sidebar />
         <div class="product-content">
             <FashionProductDisplay v-for="product in products" :key="product.id" :product="product" />
         </div>
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style scoped>
+
 .main-container {
     display: flex;
     width: 93%;

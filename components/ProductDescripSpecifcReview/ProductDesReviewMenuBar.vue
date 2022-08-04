@@ -1,34 +1,55 @@
 <template>
-    <ul>
+<ul>
+    <nuxt-link :to="`/fashion/${$route.params.id}`">
         <li>
-            <nuxt-link :to="`/fashion`">Descriptions</nuxt-link>
+            Descriptions
         </li>
+    </nuxt-link>
+
+    <nuxt-link :to="`/fashion/${$route.params.id}/productSpecification`">
         <li>
             Specifications
         </li>
+    </nuxt-link>
+
+    <nuxt-link :to="`/fashion/${$route.params.id}/productSellerDetails`">
         <li>
             Seller
         </li>
+    </nuxt-link>
+
+    <nuxt-link :to="`/fashion/${$route.params.id}/productReview`">
         <li>
-            Review
-            <span class="review-count">2</span>
+            Review <span class="review-count">2</span>
         </li>
-    </ul>
+    </nuxt-link>
+</ul>
 </template>
+
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style scoped>
-ul{
+
+a,a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a.nuxt-link-exact-active li{
+  color: #ff6e14;
+  background: rgb(206, 206, 206);
+}
+
+ul {
     width: 75%;
     margin: auto;
     display: flex;
     font-family: "Rajdhani", sans-serif;
     border-bottom: 1px solid gainsboro;
 }
-ul li{
+
+ul li {
     list-style: none;
     margin: 10px;
     margin-left: 0px;
@@ -37,11 +58,13 @@ ul li{
     padding: 10px 30px;
     cursor: pointer;
 }
-ul li:hover{
+
+ul li:hover {
     color: #EF8341;
     background: rgb(224, 224, 224);
 }
-.review-count{
+
+.review-count {
     background: #EF8341;
     border-radius: 50px;
     padding: 0px 6px;

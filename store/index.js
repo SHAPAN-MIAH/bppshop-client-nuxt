@@ -2,23 +2,12 @@ import axios from "axios";
 
 
 // state........
-// export const state = () => ({
-//   products: [],
-//   cart: [],
-//   wishList: [],
-// });
+export const state = () => ({
+  products: [],
+  cart: [],
+  wishList: [],
+});
 
-// export const state =  {
-//     products: [],
-//     cart: [],
-//     wishList: [],
-//   };
-
-export const state =  {
-    products: [],
-    cart: [],
-    wishList: [],
-};
 
 // getters.........
 export const getters = {
