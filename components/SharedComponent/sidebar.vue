@@ -27,12 +27,11 @@
     border: .01px solid rgb(233, 233, 233);
     padding: 10px 20px;
     border-radius: 5px;
-
     position: -webkit-sticky;
     position: sticky;
     top: 220px;
     margin-bottom: 50px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .sidebar-header {
@@ -48,6 +47,9 @@
     margin: 20px 0px;
     margin-left: 30px;
     padding-bottom: 10px;
-    /* border-bottom: .1px solid #f1f1f1f1; */
+    border-bottom: .1px solid #f1f1f1f1;
+}
+.menu-list li:hover {
+    color: aqua;
 }
 </style>

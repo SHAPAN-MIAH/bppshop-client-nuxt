@@ -69,7 +69,6 @@ export default {
     methods: {
         removeProductFromCart(product) {
             this.$store.dispatch("removeProductFromCart", product)
-
         },
         clearCart() {
             this.$store.dispatch('clearCart')

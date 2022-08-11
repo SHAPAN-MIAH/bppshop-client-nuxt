@@ -26,6 +26,29 @@
         <i class="bi bi-star"></i>
         <i class="bi bi-star"></i>
     </p>
+    <!-- <form>
+      <fieldset class="rating">
+        <legend>Rate our product:</legend>
+        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked="" aria-label="No rating.">
+
+        <input type="radio" id="rate1" name="rating" value="1">
+        <label for="rate1">1 star</label>
+
+        <input type="radio" id="rate2" name="rating" value="2">
+        <label for="rate2">2 stars</label>
+
+        <input type="radio" id="rate3" name="rating" value="3">
+        <label for="rate3">3 stars</label>
+
+        <input type="radio" id="rate4" name="rating" value="4">
+        <label for="rate4">4 stars</label>
+
+        <input type="radio" id="rate5" name="rating" value="5">
+        <label for="rate5">5 stars</label>
+
+        <span class="focus-ring"></span>
+      </fieldset>
+    </form> -->
     <p class="price">৳ {{product.price}}</p>
 </div>
 </template>
@@ -148,4 +171,7 @@ a {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+
+
 </style>
