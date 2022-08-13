@@ -1,4 +1,7 @@
 export default {
+  generate:{
+    fallback: true
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "BppShops",
@@ -91,7 +94,7 @@ export default {
   build: {
     command: "npm run build",
     commandOrigin: "ui",
-    publish: "/opt/build/repo/dist",
+    publish: "~/build/repo/dist",
     publishOrigin: "ui",
   },
 };
