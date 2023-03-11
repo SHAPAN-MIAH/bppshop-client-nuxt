@@ -2,107 +2,92 @@
   {
     "name": "babyCare",
     "path": "/babyCare",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\babyCare\\\\index.vue",
-    "chunkName": "pages/babyCare/index",
-    "_name": "_052f3ede"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\babyCare\\\\index.vue",
+    "chunkName": "pages/babyCare/index"
   },
   {
     "name": "cosmetics",
     "path": "/cosmetics",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\cosmetics\\\\index.vue",
-    "chunkName": "pages/cosmetics/index",
-    "_name": "_018c18eb"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\cosmetics\\\\index.vue",
+    "chunkName": "pages/cosmetics/index"
   },
   {
     "name": "electronics",
     "path": "/electronics",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\electronics\\\\index.vue",
-    "chunkName": "pages/electronics/index",
-    "_name": "_7aeedbd8"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\electronics\\\\index.vue",
+    "chunkName": "pages/electronics/index"
   },
   {
     "name": "fashion",
     "path": "/fashion",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\fashion\\\\index.vue",
-    "chunkName": "pages/fashion/index",
-    "_name": "_a7633912"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\fashion\\\\index.vue",
+    "chunkName": "pages/fashion/index"
   },
   {
     "name": "furniture",
     "path": "/furniture",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\furniture\\\\index.vue",
-    "chunkName": "pages/furniture/index",
-    "_name": "_7da9b886"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\furniture\\\\index.vue",
+    "chunkName": "pages/furniture/index"
   },
   {
     "name": "grocery",
     "path": "/grocery",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\grocery\\\\index.vue",
-    "chunkName": "pages/grocery/index",
-    "_name": "_1d4b8102"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\grocery\\\\index.vue",
+    "chunkName": "pages/grocery/index"
   },
   {
     "name": "islamic",
     "path": "/islamic",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\islamic\\\\index.vue",
-    "chunkName": "pages/islamic/index",
-    "_name": "_bc88dd32"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\islamic\\\\index.vue",
+    "chunkName": "pages/islamic/index"
   },
   {
     "name": "shoes",
     "path": "/shoes",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\shoes\\\\index.vue",
-    "chunkName": "pages/shoes/index",
-    "_name": "_19866d87"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\shoes\\\\index.vue",
+    "chunkName": "pages/shoes/index"
   },
   {
     "path": "/fashion/:id",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\fashion\\\\_id.vue",
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\fashion\\\\_id.vue",
     "chunkName": "pages/fashion/_id",
     "children": [
       {
         "name": "fashion-id",
         "path": "",
-        "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\index.vue",
-        "chunkName": "pages/fashion/_id/index",
-        "_name": "_dfbf07fa"
+        "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\index.vue",
+        "chunkName": "pages/fashion/_id/index"
       },
       {
         "name": "fashion-id-productReview",
         "path": "productReview",
-        "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\productReview.vue",
-        "chunkName": "pages/fashion/_id/productReview",
-        "_name": "_e8630e50"
+        "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\productReview.vue",
+        "chunkName": "pages/fashion/_id/productReview"
       },
       {
         "name": "fashion-id-productSellerDetails",
         "path": "productSellerDetails",
-        "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\productSellerDetails.vue",
-        "chunkName": "pages/fashion/_id/productSellerDetails",
-        "_name": "_fe58321a"
+        "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\productSellerDetails.vue",
+        "chunkName": "pages/fashion/_id/productSellerDetails"
       },
       {
         "name": "fashion-id-productSpecification",
         "path": "productSpecification",
-        "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\productSpecification.vue",
-        "chunkName": "pages/fashion/_id/productSpecification",
-        "_name": "_7ff9ea33"
+        "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\fashion\\\\_id\\\\productSpecification.vue",
+        "chunkName": "pages/fashion/_id/productSpecification"
       }
-    ],
-    "_name": "_cf8650c2"
+    ]
   },
   {
     "name": "grocery-id",
     "path": "/grocery/:id",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\grocery\\\\_id.vue",
-    "chunkName": "pages/grocery/_id",
-    "_name": "_6069dbea"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\grocery\\\\_id.vue",
+    "chunkName": "pages/grocery/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\exceliTProject\\\\BppShops\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_b26318f6"
+    "component": "D:\\\\complete projects\\\\BppShops\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]

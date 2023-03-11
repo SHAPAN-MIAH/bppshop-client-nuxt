@@ -4,21 +4,21 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _052f3ede = () => interopDefault(import('..\\pages\\babyCare\\index.vue' /* webpackChunkName: "pages/babyCare/index" */))
-const _018c18eb = () => interopDefault(import('..\\pages\\cosmetics\\index.vue' /* webpackChunkName: "pages/cosmetics/index" */))
-const _7aeedbd8 = () => interopDefault(import('..\\pages\\electronics\\index.vue' /* webpackChunkName: "pages/electronics/index" */))
-const _a7633912 = () => interopDefault(import('..\\pages\\fashion\\index.vue' /* webpackChunkName: "pages/fashion/index" */))
-const _7da9b886 = () => interopDefault(import('..\\pages\\furniture\\index.vue' /* webpackChunkName: "pages/furniture/index" */))
-const _1d4b8102 = () => interopDefault(import('..\\pages\\grocery\\index.vue' /* webpackChunkName: "pages/grocery/index" */))
-const _bc88dd32 = () => interopDefault(import('..\\pages\\islamic\\index.vue' /* webpackChunkName: "pages/islamic/index" */))
-const _19866d87 = () => interopDefault(import('..\\pages\\shoes\\index.vue' /* webpackChunkName: "pages/shoes/index" */))
-const _cf8650c2 = () => interopDefault(import('..\\pages\\fashion\\_id.vue' /* webpackChunkName: "pages/fashion/_id" */))
-const _dfbf07fa = () => interopDefault(import('..\\pages\\fashion\\_id\\index.vue' /* webpackChunkName: "pages/fashion/_id/index" */))
-const _e8630e50 = () => interopDefault(import('..\\pages\\fashion\\_id\\productReview.vue' /* webpackChunkName: "pages/fashion/_id/productReview" */))
-const _fe58321a = () => interopDefault(import('..\\pages\\fashion\\_id\\productSellerDetails.vue' /* webpackChunkName: "pages/fashion/_id/productSellerDetails" */))
-const _7ff9ea33 = () => interopDefault(import('..\\pages\\fashion\\_id\\productSpecification.vue' /* webpackChunkName: "pages/fashion/_id/productSpecification" */))
-const _6069dbea = () => interopDefault(import('..\\pages\\grocery\\_id.vue' /* webpackChunkName: "pages/grocery/_id" */))
-const _b26318f6 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _65f5a8af = () => interopDefault(import('..\\pages\\babyCare\\index.vue' /* webpackChunkName: "pages/babyCare/index" */))
+const _8cda2d8c = () => interopDefault(import('..\\pages\\cosmetics\\index.vue' /* webpackChunkName: "pages/cosmetics/index" */))
+const _4c82d467 = () => interopDefault(import('..\\pages\\electronics\\index.vue' /* webpackChunkName: "pages/electronics/index" */))
+const _651afb86 = () => interopDefault(import('..\\pages\\fashion\\index.vue' /* webpackChunkName: "pages/fashion/index" */))
+const _7931f40c = () => interopDefault(import('..\\pages\\furniture\\index.vue' /* webpackChunkName: "pages/furniture/index" */))
+const _53cfcdde = () => interopDefault(import('..\\pages\\grocery\\index.vue' /* webpackChunkName: "pages/grocery/index" */))
+const _5a882976 = () => interopDefault(import('..\\pages\\islamic\\index.vue' /* webpackChunkName: "pages/islamic/index" */))
+const _4567bd56 = () => interopDefault(import('..\\pages\\shoes\\index.vue' /* webpackChunkName: "pages/shoes/index" */))
+const _77c3b124 = () => interopDefault(import('..\\pages\\fashion\\_id.vue' /* webpackChunkName: "pages/fashion/_id" */))
+const _1de8d558 = () => interopDefault(import('..\\pages\\fashion\\_id\\index.vue' /* webpackChunkName: "pages/fashion/_id/index" */))
+const _6a37b129 = () => interopDefault(import('..\\pages\\fashion\\_id\\productReview.vue' /* webpackChunkName: "pages/fashion/_id/productReview" */))
+const _6a5ae182 = () => interopDefault(import('..\\pages\\fashion\\_id\\productSellerDetails.vue' /* webpackChunkName: "pages/fashion/_id/productSellerDetails" */))
+const _6980e4c2 = () => interopDefault(import('..\\pages\\fashion\\_id\\productSpecification.vue' /* webpackChunkName: "pages/fashion/_id/productSpecification" */))
+const _e769a88e = () => interopDefault(import('..\\pages\\grocery\\_id.vue' /* webpackChunkName: "pages/grocery/_id" */))
+const _6bf282d4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -33,63 +33,63 @@ export const routerOptions = {
 
   routes: [{
     path: "/babyCare",
-    component: _052f3ede,
+    component: _65f5a8af,
     name: "babyCare"
   }, {
     path: "/cosmetics",
-    component: _018c18eb,
+    component: _8cda2d8c,
     name: "cosmetics"
   }, {
     path: "/electronics",
-    component: _7aeedbd8,
+    component: _4c82d467,
     name: "electronics"
   }, {
     path: "/fashion",
-    component: _a7633912,
+    component: _651afb86,
     name: "fashion"
   }, {
     path: "/furniture",
-    component: _7da9b886,
+    component: _7931f40c,
     name: "furniture"
   }, {
     path: "/grocery",
-    component: _1d4b8102,
+    component: _53cfcdde,
     name: "grocery"
   }, {
     path: "/islamic",
-    component: _bc88dd32,
+    component: _5a882976,
     name: "islamic"
   }, {
     path: "/shoes",
-    component: _19866d87,
+    component: _4567bd56,
     name: "shoes"
   }, {
     path: "/fashion/:id",
-    component: _cf8650c2,
+    component: _77c3b124,
     children: [{
       path: "",
-      component: _dfbf07fa,
+      component: _1de8d558,
       name: "fashion-id"
     }, {
       path: "productReview",
-      component: _e8630e50,
+      component: _6a37b129,
       name: "fashion-id-productReview"
     }, {
       path: "productSellerDetails",
-      component: _fe58321a,
+      component: _6a5ae182,
       name: "fashion-id-productSellerDetails"
     }, {
       path: "productSpecification",
-      component: _7ff9ea33,
+      component: _6980e4c2,
       name: "fashion-id-productSpecification"
     }]
   }, {
     path: "/grocery/:id",
-    component: _6069dbea,
+    component: _e769a88e,
     name: "grocery-id"
   }, {
     path: "/",
-    component: _b26318f6,
+    component: _6bf282d4,
     name: "index"
   }],
 

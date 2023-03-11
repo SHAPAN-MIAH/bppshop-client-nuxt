@@ -1,21 +1,21 @@
-export const ProductsCollectionFashionProductDisplay = () => import('../..\\components\\ProductsCollection\\FashionProductDisplay.vue' /* webpackChunkName: "components/products-collection-fashion-product-display" */).then(c => wrapFunctional(c.default || c))
-export const ProductsCollectionProductCard = () => import('../..\\components\\ProductsCollection\\ProductCard.vue' /* webpackChunkName: "components/products-collection-product-card" */).then(c => wrapFunctional(c.default || c))
-export const ProductsDisplay = () => import('../..\\components\\ProductsCollection\\ProductsDisplay.vue' /* webpackChunkName: "components/products-display" */).then(c => wrapFunctional(c.default || c))
-export const Home = () => import('../..\\components\\Home\\Home.vue' /* webpackChunkName: "components/home" */).then(c => wrapFunctional(c.default || c))
-export const HomeCart = () => import('../..\\components\\Home\\HomeCart.vue' /* webpackChunkName: "components/home-cart" */).then(c => wrapFunctional(c.default || c))
-export const HomeFooter = () => import('../..\\components\\Home\\HomeFooter.vue' /* webpackChunkName: "components/home-footer" */).then(c => wrapFunctional(c.default || c))
-export const ProductDescription = () => import('../..\\components\\ProductDescripSpecifcReview\\ProductDescription.vue' /* webpackChunkName: "components/product-description" */).then(c => wrapFunctional(c.default || c))
-export const ProductDesReviewMenuBar = () => import('../..\\components\\ProductDescripSpecifcReview\\ProductDesReviewMenuBar.vue' /* webpackChunkName: "components/product-des-review-menu-bar" */).then(c => wrapFunctional(c.default || c))
-export const ProductReview = () => import('../..\\components\\ProductDescripSpecifcReview\\ProductReview.vue' /* webpackChunkName: "components/product-review" */).then(c => wrapFunctional(c.default || c))
-export const ProductSellerDetails = () => import('../..\\components\\ProductDescripSpecifcReview\\ProductSellerDetails.vue' /* webpackChunkName: "components/product-seller-details" */).then(c => wrapFunctional(c.default || c))
-export const ProductSpecification = () => import('../..\\components\\ProductDescripSpecifcReview\\ProductSpecification.vue' /* webpackChunkName: "components/product-specification" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentCartView = () => import('../..\\components\\SharedComponent\\cartView.vue' /* webpackChunkName: "components/shared-component-cart-view" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentCategoryNav = () => import('../..\\components\\SharedComponent\\categoryNav.vue' /* webpackChunkName: "components/shared-component-category-nav" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentCategorySlider = () => import('../..\\components\\SharedComponent\\categorySlider.vue' /* webpackChunkName: "components/shared-component-category-slider" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentFooter = () => import('../..\\components\\SharedComponent\\footer.vue' /* webpackChunkName: "components/shared-component-footer" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentNav = () => import('../..\\components\\SharedComponent\\Nav.vue' /* webpackChunkName: "components/shared-component-nav" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentSidebar = () => import('../..\\components\\SharedComponent\\sidebar.vue' /* webpackChunkName: "components/shared-component-sidebar" */).then(c => wrapFunctional(c.default || c))
-export const SharedComponentWishList = () => import('../..\\components\\SharedComponent\\wishList.vue' /* webpackChunkName: "components/shared-component-wish-list" */).then(c => wrapFunctional(c.default || c))
+export { default as Home } from '../..\\components\\Home\\Home.vue'
+export { default as HomeCart } from '../..\\components\\Home\\HomeCart.vue'
+export { default as HomeFooter } from '../..\\components\\Home\\HomeFooter.vue'
+export { default as ProductsCollectionFashionProductDisplay } from '../..\\components\\ProductsCollection\\FashionProductDisplay.vue'
+export { default as ProductsCollectionProductCard } from '../..\\components\\ProductsCollection\\ProductCard.vue'
+export { default as ProductsDisplay } from '../..\\components\\ProductsCollection\\ProductsDisplay.vue'
+export { default as ProductDescription } from '../..\\components\\ProductDescripSpecifcReview\\ProductDescription.vue'
+export { default as ProductDesReviewMenuBar } from '../..\\components\\ProductDescripSpecifcReview\\ProductDesReviewMenuBar.vue'
+export { default as ProductReview } from '../..\\components\\ProductDescripSpecifcReview\\ProductReview.vue'
+export { default as ProductSellerDetails } from '../..\\components\\ProductDescripSpecifcReview\\ProductSellerDetails.vue'
+export { default as ProductSpecification } from '../..\\components\\ProductDescripSpecifcReview\\ProductSpecification.vue'
+export { default as SharedComponentCartView } from '../..\\components\\SharedComponent\\cartView.vue'
+export { default as SharedComponentCategoryNav } from '../..\\components\\SharedComponent\\categoryNav.vue'
+export { default as SharedComponentCategorySlider } from '../..\\components\\SharedComponent\\categorySlider.vue'
+export { default as SharedComponentFooter } from '../..\\components\\SharedComponent\\footer.vue'
+export { default as SharedComponentNav } from '../..\\components\\SharedComponent\\Nav.vue'
+export { default as SharedComponentSidebar } from '../..\\components\\SharedComponent\\sidebar.vue'
+export { default as SharedComponentWishList } from '../..\\components\\SharedComponent\\wishList.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

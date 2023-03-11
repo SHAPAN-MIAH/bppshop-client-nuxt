@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_1b659b14 from 'nuxt_plugin_plugin_1b659b14' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_workbox_ebffdeda from 'nuxt_plugin_workbox_ebffdeda' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_fdb27bda from 'nuxt_plugin_metaplugin_fdb27bda' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
-import nuxt_plugin_axios_2103e592 from 'nuxt_plugin_axios_2103e592' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_38b08c7f from 'nuxt_plugin_plugin_38b08c7f' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_workbox_11fabbbe from 'nuxt_plugin_workbox_11fabbbe' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_0cc5123e from 'nuxt_plugin_metaplugin_0cc5123e' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
+import nuxt_plugin_axios_4def8722 from 'nuxt_plugin_axios_4def8722' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_globalcomponents_6239e9dc from 'nuxt_plugin_globalcomponents_6239e9dc' // Source: ..\\plugins\\global_components.js (mode: 'all')
 import nuxt_plugin_vueproductzoomer_0032e89c from 'nuxt_plugin_vueproductzoomer_0032e89c' // Source: ..\\plugins\\vue-product-zoomer.js (mode: 'client')
 
@@ -86,7 +86,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"BppShops","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"BppShops"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"BppShops"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"BppShops"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fimg\u002Fbpp_icon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap-icons@1.8.3\u002Ffont\u002Fbootstrap-icons.css"},{"rel":"preconnect","href":"https:\u002F\u002Ffonts.googleapis.com"},{"rel":"preconnect","href":"https:\u002F\u002Ffonts.gstatic.com"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Rajdhani:wght@300;400;500;600;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F6.1.1\u002Fcss\u002Fall.min.css","rel":"stylesheet","integrity":"sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.183d2f63.json","hid":"manifest"}],"script":[{"src":"js\u002Fbootstrap.bundle.min.js","type":"text\u002Fjavascript"}],"style":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"BppShops","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fimg\u002Fbpp_icon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap-icons@1.8.3\u002Ffont\u002Fbootstrap-icons.css"},{"rel":"preconnect","href":"https:\u002F\u002Ffonts.googleapis.com"},{"rel":"preconnect","href":"https:\u002F\u002Ffonts.gstatic.com"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Rajdhani:wght@300;400;500;600;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Ffont-awesome\u002F6.1.1\u002Fcss\u002Fall.min.css","rel":"stylesheet","integrity":"sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==","crossorigin":"anonymous","referrerpolicy":"no-referrer"}],"script":[{"src":"js\u002Fbootstrap.bundle.min.js","type":"text\u002Fjavascript"}],"style":[]},
 
     store,
     router,
@@ -215,20 +215,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_1b659b14 === 'function') {
-    await nuxt_plugin_plugin_1b659b14(app.context, inject)
+  if (typeof nuxt_plugin_plugin_38b08c7f === 'function') {
+    await nuxt_plugin_plugin_38b08c7f(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_ebffdeda === 'function') {
-    await nuxt_plugin_workbox_ebffdeda(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_11fabbbe === 'function') {
+    await nuxt_plugin_workbox_11fabbbe(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_fdb27bda === 'function') {
-    await nuxt_plugin_metaplugin_fdb27bda(app.context, inject)
+  if (typeof nuxt_plugin_metaplugin_0cc5123e === 'function') {
+    await nuxt_plugin_metaplugin_0cc5123e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_2103e592 === 'function') {
-    await nuxt_plugin_axios_2103e592(app.context, inject)
+  if (typeof nuxt_plugin_axios_4def8722 === 'function') {
+    await nuxt_plugin_axios_4def8722(app.context, inject)
   }
 
   if (typeof nuxt_plugin_globalcomponents_6239e9dc === 'function') {

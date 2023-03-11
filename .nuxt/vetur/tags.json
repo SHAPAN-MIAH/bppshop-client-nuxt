@@ -1,13 +1,4 @@
 {
-  "ProductsCollectionFashionProductDisplay": {
-    "description": "Auto imported from components/ProductsCollection/FashionProductDisplay.vue"
-  },
-  "ProductsCollectionProductCard": {
-    "description": "Auto imported from components/ProductsCollection/ProductCard.vue"
-  },
-  "ProductsDisplay": {
-    "description": "Auto imported from components/ProductsCollection/ProductsDisplay.vue"
-  },
   "Home": {
     "description": "Auto imported from components/Home/Home.vue"
   },
@@ -16,6 +7,15 @@
   },
   "HomeFooter": {
     "description": "Auto imported from components/Home/HomeFooter.vue"
+  },
+  "ProductsCollectionFashionProductDisplay": {
+    "description": "Auto imported from components/ProductsCollection/FashionProductDisplay.vue"
+  },
+  "ProductsCollectionProductCard": {
+    "description": "Auto imported from components/ProductsCollection/ProductCard.vue"
+  },
+  "ProductsDisplay": {
+    "description": "Auto imported from components/ProductsCollection/ProductsDisplay.vue"
   },
   "ProductDescription": {
     "description": "Auto imported from components/ProductDescripSpecifcReview/ProductDescription.vue"

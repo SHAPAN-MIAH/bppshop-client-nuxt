@@ -123,6 +123,15 @@ export const mutations = {
   },
 
   ADD_TO_WISHLIST(state, { product, quantity }) {
+    let productInWishList = state.wishList.find((item) => {
+      return item.product.id === product.id;
+    });
+    if (productInWishList) {
+      alert('This product already added!')
+      productInWishList.quantity +! quantity;
+      return;
+    }
+
     state.wishList.push({ product, quantity });
   },
 

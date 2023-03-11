@@ -6,12 +6,12 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<ProductsCollectionFashionProductDisplay>` | `<products-collection-fashion-product-display>` (components/ProductsCollection/FashionProductDisplay.vue)
-- `<ProductsCollectionProductCard>` | `<products-collection-product-card>` (components/ProductsCollection/ProductCard.vue)
-- `<ProductsDisplay>` | `<products-display>` (components/ProductsCollection/ProductsDisplay.vue)
 - `<Home>` | `<home>` (components/Home/Home.vue)
 - `<HomeCart>` | `<home-cart>` (components/Home/HomeCart.vue)
 - `<HomeFooter>` | `<home-footer>` (components/Home/HomeFooter.vue)
+- `<ProductsCollectionFashionProductDisplay>` | `<products-collection-fashion-product-display>` (components/ProductsCollection/FashionProductDisplay.vue)
+- `<ProductsCollectionProductCard>` | `<products-collection-product-card>` (components/ProductsCollection/ProductCard.vue)
+- `<ProductsDisplay>` | `<products-display>` (components/ProductsCollection/ProductsDisplay.vue)
 - `<ProductDescription>` | `<product-description>` (components/ProductDescripSpecifcReview/ProductDescription.vue)
 - `<ProductDesReviewMenuBar>` | `<product-des-review-menu-bar>` (components/ProductDescripSpecifcReview/ProductDesReviewMenuBar.vue)
 - `<ProductReview>` | `<product-review>` (components/ProductDescripSpecifcReview/ProductReview.vue)

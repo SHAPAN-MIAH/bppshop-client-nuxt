@@ -15,9 +15,9 @@
 <script>
 export default {
   name: "HomeCart",
-  created() {
-    this.$emit("home-category", this.category);
-  },
+  // created() {
+  //   this.$emit("home-category", this.category);
+  // },
 
   data() {
     return {
