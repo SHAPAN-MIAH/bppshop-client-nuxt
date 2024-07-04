@@ -9,7 +9,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/img/bpp_icon.png' },
       { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
@@ -19,20 +19,13 @@ export default {
       crossorigin:"anonymous",
       referrerpolicy:"no-referrer"},
 
-     
-     
-
-
-
-
-
-     
     ],
  
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~assets/css/main.css'
   ],
 
 
@@ -46,18 +39,18 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // Simple usage
-    '@nuxtjs/vuetify',
+    // '@nuxtjs/vuetify',
     
     // With options
-    ['@nuxtjs/vuetify', { /* module options */ }]
+  //  ['@nuxtjs/vuetify', { /* module options */ }]
   ],
 
-  fontawesome: {
-    icons:
-    {
-    }
+  // fontawesome: {
+  //   icons:
+  //   {
+  //   }
 
-  },
+  // },
 
 
 // Modules: https://go.nuxtjs.dev/config-modules
