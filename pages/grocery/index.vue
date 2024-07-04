@@ -1,29 +1,57 @@
 <template>
-<div>
-    <div class="grocery-header">
-        <h2>Grocery</h2>
+<div class="container">
+    <div class="category-navbar">
+        <Category-nav categoryName="Grocery" />
     </div>
-    <h1>This is grocery page</h1>
+    <div class="main-container">
+        <Sidebar />
+        <div class="product-content">
+            <ProductsDisplay v-for="product in products" :key="product.id" :product="product" />
+        </div>
+    </div>
 </div>
 </template>
 
 <script>
+import ProductsDisplay from '~/components/ProductsCollection/ProductsDisplay.vue';
+import Sidebar from '~/components/SharedComponent/sidebar.vue';
+
 export default {
-    layout: 'categoryLayout'
-}
+    layout: "categoryLayout",
+    components: {
+        ProductsDisplay,
+        Sidebar
+    },
+
+    mounted() {
+        this.$store.dispatch("getProducts");
+    },
+    computed: {
+        products() {
+            return this.$store.state.products;
+        }
+    },
+
+};
 </script>
 
 <style scoped>
-.grocery-header{
-    width: 100%;
-    background: #EF8341;
-    text-align: center;
+.main-container {
+    display: flex;
+    width: 93%;
+    margin: auto;
+    padding-top: 230px;
     font-family: "Rajdhani", sans-serif;
-    color: #fff;
-}
-.grocery-header h2{
-    font-weight: 500;
-    padding: 5px 0px;
+    color: gray;
 }
 
+.product-content {
+    width: 79%;
+    margin-left: auto;
+    padding-bottom: 50px;
+    font-family: "Rajdhani", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
 </style>

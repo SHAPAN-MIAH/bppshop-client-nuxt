@@ -1,5 +1,5 @@
 <template>
-<infinite-slide-bar duration="50s" delay="1s" :barStyle="{ background: '#ee9c69', padding: '5px 0', marginTop: '80px' }">
+<infinite-slide-bar duration="50s" delay="1s" :barStyle="{ background: '#ee9c69', padding: '5px 0', marginTop: '76px', position: 'fixed' }">
     <span class="categorySliderCart" v-for="item in category" :key="item.id">
         <nuxt-link :to="'/'+item.route">
             <img :src="item.imgIcon" alt="" />
@@ -13,6 +13,7 @@
 <script>
 import InfiniteSlideBar from 'vue-infinite-slide-bar'
 export default {
+    
     components: {
         InfiniteSlideBar
     },
@@ -102,6 +103,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 30px;
     padding: 5px 30px;
+    
     /* justify-content: space-around; */
 }
 .categorySliderCart img{

@@ -4,7 +4,7 @@
       <li class="cart" v-for="item in category" :key="item.id">
         <nuxt-link :to="'/' + item.route">
           <p v-if="item.status == 'Upcoming'">{{ item.status }}</p>
-          <img :src="item.img" alt="" />
+          <img :src="item.img" alt="">
           <h3>{{ item.name }}</h3>
         </nuxt-link>
       </li>
@@ -15,9 +15,9 @@
 <script>
 export default {
   name: "HomeCart",
-  created() {
-    this.$emit("home-category", this.category);
-  },
+  // created() {
+  //   this.$emit("home-category", this.category);
+  // },
 
   data() {
     return {
@@ -84,94 +84,6 @@ export default {
 };
 </script>
 
-<style scoped>
-a {
-  text-decoration: none;
-}
-.container {
-  margin-top: 100px;
-}
+<style src="~/assets/css/homeCart.css" scoped>
 
-.cart-container {
-  width: 70%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: auto;
-}
-
-.cart {
-  list-style: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  margin: 12px;
-  padding: 30px 20px;
-  border-radius: 5px;
-  transition: all 0.5s;
-}
-
-.cart:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transform: translateY(-10px);
-}
-
-.cart p {
-  font-family: "Rajdhani", sans-serif;
-  float: right;
-  background: green;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 30px;
-}
-.cart img {
-  width: 100%;
-}
-
-.cart h3 {
-  font-family: "Rajdhani", sans-serif;
-  text-align: center;
-  color: gray;
-  font-weight: 700;
-}
-
-/*------- responsive css design------------- */
-@media screen and (max-width: 1400px) {
-  .cart-container {
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .cart-container {
-    width: 75%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-  }
-}
-@media screen and (max-width: 992px) {
-  .cart-container {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .cart-container {
-    width: 85%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  .cart-container {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto;
-  }
-}
 </style>
